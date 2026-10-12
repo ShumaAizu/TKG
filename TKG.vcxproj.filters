@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\00_Main">
+      <UniqueIdentifier>{171b1ec3-4abd-4384-9109-33cc79cc3f77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\00_Main">
+      <UniqueIdentifier>{25ce70da-1ed1-4366-bd5e-fcd8e54dfa97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\01_Resource">
+      <UniqueIdentifier>{21d96394-4a94-4938-8dfb-68d9f4dbd000}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\01_Resource">
+      <UniqueIdentifier>{f5985794-e391-4ad0-a213-1c982ecfac6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\02_Object">
+      <UniqueIdentifier>{1a91aae9-c7af-4693-b5ce-1ccd488bd49a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\02_Object">
+      <UniqueIdentifier>{a2b873e6-10d7-4fa2-9548-d56ec98d9b44}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="camera.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="light.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="player.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="field.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="wall.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="item.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="tcp_client.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>ソース ファイル\00_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="manager.cpp">
+      <Filter>ソース ファイル\00_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.cpp">
+      <Filter>ソース ファイル\00_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="renderer.cpp">
+      <Filter>ソース ファイル\00_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="debugproc.cpp">
+      <Filter>ソース ファイル\00_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="input.cpp">
+      <Filter>ソース ファイル\00_Main</Filter>
+    </ClCompile>
+    <ClCompile Include="model.cpp">
+      <Filter>ソース ファイル\01_Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="motion.cpp">
+      <Filter>ソース ファイル\01_Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="sound.cpp">
+      <Filter>ソース ファイル\01_Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="texture.cpp">
+      <Filter>ソース ファイル\01_Resource</Filter>
+    </ClCompile>
+    <ClCompile Include="object.cpp">
+      <Filter>ソース ファイル\02_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="object3D.cpp">
+      <Filter>ソース ファイル\02_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="objectloader.cpp">
+      <Filter>ソース ファイル\02_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="objectX.cpp">
+      <Filter>ソース ファイル\02_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="score.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="number.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="camera.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="light.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="player.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="field.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="wall.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="item.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="protocol_ranking.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="tcp_client.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="debugproc.h">
+      <Filter>ヘッダー ファイル\00_Main</Filter>
+    </ClInclude>
+    <ClInclude Include="input.h">
+      <Filter>ヘッダー ファイル\00_Main</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>ヘッダー ファイル\00_Main</Filter>
+    </ClInclude>
+    <ClInclude Include="manager.h">
+      <Filter>ヘッダー ファイル\00_Main</Filter>
+    </ClInclude>
+    <ClInclude Include="pch.h">
+      <Filter>ヘッダー ファイル\00_Main</Filter>
+    </ClInclude>
+    <ClInclude Include="renderer.h">
+      <Filter>ヘッダー ファイル\00_Main</Filter>
+    </ClInclude>
+    <ClInclude Include="texture.h">
+      <Filter>ヘッダー ファイル\01_Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="sound.h">
+      <Filter>ヘッダー ファイル\01_Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="motion.h">
+      <Filter>ヘッダー ファイル\01_Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="model.h">
+      <Filter>ヘッダー ファイル\01_Resource</Filter>
+    </ClInclude>
+    <ClInclude Include="object.h">
+      <Filter>ヘッダー ファイル\02_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="object3D.h">
+      <Filter>ヘッダー ファイル\02_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="objectloader.h">
+      <Filter>ヘッダー ファイル\02_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="objectX.h">
+      <Filter>ヘッダー ファイル\02_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="score.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="number.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

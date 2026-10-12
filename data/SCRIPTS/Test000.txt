@@ -1,0 +1,136 @@
+#==============================================
+#
+# StageFile [Test.txt]
+# Author : SHUMA AIZU
+#
+#==============================================
+
+SCRIPT		# この行は消さないでね！
+
+#------------------------------------------------------------------------------
+# 配置情報
+#------------------------------------------------------------------------------
+
+
+#------------------------------------------------------------------------------
+# フィールド情報
+#------------------------------------------------------------------------------
+FIELDSET
+	TEXTURE_FILENAME = data//TEXTURE//field000.jpg
+	POS = 0.0 0.0 0.0
+	ROT = 0.0 0.0 0.0
+	WIDTH = 250.0
+	DEPTH = 250.0
+END_FIELDSET
+
+FIELDSET
+	TEXTURE_FILENAME = data//TEXTURE//field000.jpg
+	POS = 175.0 0.0 0.0
+	ROT = 0.0 0.0 0.75
+	WIDTH = 150.0
+	DEPTH = 275.0
+END_FIELDSET
+
+FIELDSET
+	TEXTURE_FILENAME = data//TEXTURE//field000.jpg
+	POS = -175.0 0.0 0.0
+	ROT = 0.0 0.0 -0.75
+	WIDTH = 150.0
+	DEPTH = 275.0
+END_FIELDSET
+
+FIELDSET
+	TEXTURE_FILENAME = data//TEXTURE//field000.jpg
+	POS = 0.0 0.0 -175.0
+	ROT = 0.75 0.0 0.0
+	WIDTH = 275.0
+	DEPTH = 150.0
+END_FIELDSET
+
+FIELDSET
+	TEXTURE_FILENAME = data//TEXTURE//field000.jpg
+	POS = 0.0 0.0 175.0
+	ROT = -0.75 0.0 0.0
+	WIDTH = 275.0
+	DEPTH = 150.0
+END_FIELDSET
+
+#------------------------------------------------------------------------------
+# ウォール情報
+#------------------------------------------------------------------------------
+WALLSET
+	TEXTURE_FILENAME = data//TEXTURE//wall000.jpg
+	POS = 0.0 250.0 250.0
+	ROT = 0.0 0.0 0.0
+	WIDTH = 375.0
+	HEIGHT = 375.0
+END_WALLSET
+
+WALLSET
+	TEXTURE_FILENAME = data//TEXTURE//wall000.jpg
+	POS = 250.0 250.0 0.0
+	ROT = 0.0 1.57 0.0
+	WIDTH = 375.0
+	HEIGHT = 375.0
+END_WALLSET
+
+WALLSET
+	TEXTURE_FILENAME = data//TEXTURE//wall000.jpg
+	POS = -250.0 250.0 0.0
+	ROT = 0.0 -1.57 0.0
+	WIDTH = 375.0
+	HEIGHT = 375.0
+END_WALLSET
+
+WALLSET
+	TEXTURE_FILENAME = data//TEXTURE//wall000.jpg
+	POS = 0.0 250.0 -250.0
+	ROT = 0.0 3.14 0.0
+	WIDTH = 375.0
+	HEIGHT = 375.0
+END_WALLSET
+
+#------------------------------------------------------------------------------
+# アイテム情報
+#------------------------------------------------------------------------------
+
+ITEMSET
+	MODEL_FILENAME = data//MODEL//snowflake000.x
+	POS = 150.0 50.0 -150.0
+	ROT = 0.0 0.0 0.0
+	RADIUS = 50.0
+END_ITEMSET
+
+ITEMSET
+	MODEL_FILENAME = data//MODEL//ice000.x
+	POS = -150.0 50.0 -150.0
+	ROT = 0.0 0.0 0.0
+	RADIUS = 50.0
+END_ITEMSET
+
+ITEMSET
+	MODEL_FILENAME = data//MODEL//snowflake000.x
+	POS = 150.0 50.0 150.0
+	ROT = 0.0 0.0 0.0
+	RADIUS = 50.0
+END_ITEMSET
+
+ITEMSET
+	MODEL_FILENAME = data//MODEL//ice000.x
+	POS = -150.0 50.0 150.0
+	ROT = 0.0 0.0 0.0
+	RADIUS = 50.0
+END_ITEMSET
+
+#------------------------------------------------------------------------------
+# プレイヤー情報
+#------------------------------------------------------------------------------
+PLAYERSET
+	POS = 0.0 0.0 0.0
+	RADIUS = 10.0
+	SPEED = 0.025
+	ROTATTENUATION = 0.08
+END_PLAYERSET
+
+
+END_SCRIPT		# この行は消さないでね！
