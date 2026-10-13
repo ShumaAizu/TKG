@@ -31,6 +31,12 @@
     <Filter Include="ヘッダー ファイル\02_Object">
       <UniqueIdentifier>{a2b873e6-10d7-4fa2-9548-d56ec98d9b44}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\03_Effect">
+      <UniqueIdentifier>{7b1e1ba7-5aac-4250-ae55-3151a914c0ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\03_Effect">
+      <UniqueIdentifier>{63c65c43-d21c-4738-b541-0599934295e6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="camera.cpp">
@@ -101,6 +107,9 @@
     </ClCompile>
     <ClCompile Include="number.cpp">
       <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="batchingeffect.cpp">
+      <Filter>ソース ファイル\03_Effect</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -175,6 +184,9 @@
     </ClInclude>
     <ClInclude Include="number.h">
       <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="batchingeffect.h">
+      <Filter>ヘッダー ファイル\03_Effect</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

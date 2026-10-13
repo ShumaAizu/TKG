@@ -27,12 +27,14 @@
 #include "field.h"
 #include "wall.h"
 #include "item.h"
+#include "batchingeffect.h"
 
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
 #define SPEED				(0.025f)		// 速度
 #define ROTATTENUATION		(0.08f)			// 回転減衰
+#define GRAVITY				(-0.25f)		// 重力
 
 //=============================================================================
 // 生成処理
@@ -182,63 +184,6 @@ HRESULT CPlayer::Init(const D3DXVECTOR3 pos, const float fRadius, const float fS
 
 	m_nNumModel++;
 
-	//m_apModel[1] = CModel::Create(D3DXVECTOR3(0.0f, 22.5f, 0.0f),
-	//	D3DXVECTOR3(0.0f, 0.0f, 0.0f),
-	//	"data//MODEL//01_snowman_head.x");
-
-	//m_nNumModel++;
-
-	//m_apModel[2] = CModel::Create(D3DXVECTOR3(-8.5f, 17.5f, 0.0f),
-	//	D3DXVECTOR3(0.0f, 0.0f, 0.90f),
-	//	"data//MODEL//02_snowman_armR.x");
-
-	//m_nNumModel++;
-
-	//m_apModel[3] = CModel::Create(D3DXVECTOR3(8.5f, 17.5f, 0.0f),
-	//	D3DXVECTOR3(0.0f, 0.0f, -0.90f),
-	//	"data//MODEL//03_snowman_armL.x");
-
-	//m_nNumModel++;
-
-	//m_apModel[4] = CModel::Create(D3DXVECTOR3(5.0f, 15.0f, 0.0f),
-	//	D3DXVECTOR3(0.0f, 0.0f, -0.75f),
-	//	"data//MODEL//04_snowman_bucket.x");
-
-	//m_nNumModel++;
-
-	//m_apModel[5] = CModel::Create(D3DXVECTOR3(0.0f, 15.0f, 0.0f),
-	//	D3DXVECTOR3(D3DX_PI * 0.5f, D3DX_PI, 0.0f),
-	//	"data//MODEL//Arrow000.x");
-
-	//m_nNumModel++;
-
-	//// 親モデルの設定
-	//m_apModel[1]->SetParent(m_apModel[0]);
-
-	//m_apModel[2]->SetParent(m_apModel[0]);
-
-	//m_apModel[3]->SetParent(m_apModel[0]);
-
-	//m_apModel[4]->SetParent(m_apModel[1]);
-
-	//m_apModel[5]->SetParent(m_apModel[0]);
-
-	//// モーションのインスタンス生成
-	//if (m_pMotion == NULL)
-	//{
-	//	m_pMotion = new CMotion;
-	//}
-
-	//if (m_pMotion != NULL)
-	//{
-
-	//}
-
-	//m_pMotion->SetModel(&m_apModel[0], m_nNumModel);
-	//LoadMotionInfo("data/SCRIPTS/MOTION/snowman_motion.txt");
-
-	//m_pMotion->Set(0, false);
-
 	return S_OK;
 }
 
@@ -284,6 +229,7 @@ void CPlayer::Update(void)
 	CInputKeyboard* pInputKeyboard = pManager->GetInputKeyboard();
 	CInputJoypad* pInputJoypad = pManager->GetInputJoypad();
 	CCamera* pCamera = pManager->GetCamera();
+	CBatchingEffect* pBatchiEffect = pManager->GetBatchingEffect();
 
 	static float fRotMove = 0.0f, fRotDest = 0.0f, fRotDiff = 0.0f;
 
@@ -348,6 +294,20 @@ void CPlayer::Update(void)
 		}
 
 		KeyboardMoveOld = KeyboardMove;
+
+		if (m_bJump == false)
+		{// ジャンプせずに動いている間
+			// 軌跡エフェクト
+			pBatchiEffect->Set(m_pos,
+				INIT_D3DXVEC3,
+				D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f),
+				15.0f,
+				CBatchingEffect::TYPE::TYPE_TRAJECTORY);
+
+			// 振動
+			pInputJoypad->SetVibration(1500, 1500, 1);
+		}
+
 	}
 
 	// 移動量
@@ -362,11 +322,21 @@ void CPlayer::Update(void)
 
 	if ((pInputKeyboard->GetTrigger(DIK_SPACE) == true || pInputJoypad->GetTrigger(CInputJoypad::KEY::KEY_A) == true) && m_bJump == false)
 	{// スペースキーが押されたかつジャンプ状態じゃない
-		m_move.y = m_fRadius * 1.25f;
+		m_move.y = m_fRadius * 0.725f;
 		m_bJump = true;
+		pInputJoypad->SetVibration(50000, 50000, 15);
 	}
 
-	m_move.y += -0.75f;		// 重力をかける
+	if (m_bJump == true)
+	{
+		pBatchiEffect->Set(m_pos, 
+			INIT_D3DXVEC3, 
+			D3DXCOLOR(1.0f, 1.0f, 0.0f, 1.0f), 
+			15.0f, 
+			CBatchingEffect::TYPE::TYPE_TRAJECTORY);
+	}
+
+	m_move.y += GRAVITY;	// 重力をかける
 	m_pos += m_move;		// 位置を更新
 
 	// 当たり判定

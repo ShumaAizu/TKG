@@ -28,6 +28,8 @@
 #include "item.h"
 #include "score.h"
 
+#include "batchingeffect.h"
+
 #include "tcp_client.h"
 #include "protocol_ranking.h"
 
@@ -160,7 +162,7 @@ HRESULT CManager::Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow)
 	}
 
 	// 初期化処理
-	if (FAILED(m_pInputMouse->Init(hInstance, hWnd)))
+	if (FAILED(m_pInputJoypad->Init()))
 	{// 初期化処理が失敗した場合
 		return -1;
 	}
@@ -244,6 +246,23 @@ HRESULT CManager::Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow)
 		return -1;
 	}
 
+	// バッチ描画エフェクトのインスタンスを生成
+	if (m_pBatchingEffect == nullptr)
+	{
+		m_pBatchingEffect = new CBatchingEffect;
+	}
+
+	if (m_pBatchingEffect == nullptr)
+	{// 生成に失敗していたら
+		return -1;
+	}
+
+	// 初期化処理
+	if (FAILED(m_pBatchingEffect->Init(10000, "data//TEXTURE//effect001.jpg")))
+	{// 失敗した場合
+		return -1;
+	}
+
 	// クライアントのインスタンスを生成
 	if (m_pTcpClient == nullptr)
 	{
@@ -288,20 +307,28 @@ void CManager::Uninit(void)
 	// サウンドストップ
 	m_pSound->Stop();
 
-	if (m_pTcpClient != NULL)
+	if (m_pTcpClient != nullptr)
 	{// クライアントを生成していたなら
 		// 開放
 		m_pTcpClient->Uninit();
 		delete m_pTcpClient;
-		m_pTcpClient = NULL;
+		m_pTcpClient = nullptr;
 	}
 
-	if (m_pObjectLoader != NULL)
+	if (m_pBatchingEffect != nullptr)
+	{// オブジェクトローダーを生成していたなら
+		// 開放
+		m_pBatchingEffect->Uninit();
+		delete m_pBatchingEffect;
+		m_pBatchingEffect = nullptr;
+	}
+
+	if (m_pObjectLoader != nullptr)
 	{// オブジェクトローダーを生成していたなら
 		// 開放
 		m_pObjectLoader->Uninit();
 		delete m_pObjectLoader;
-		m_pObjectLoader = NULL;
+		m_pObjectLoader = nullptr;
 	}
 
 	if (m_pCamera != nullptr)
@@ -426,6 +453,12 @@ void CManager::Update(void)
 		m_pRenderer->Update();
 	}
 
+	// バッチ描画エフェクトの更新処理
+	if (m_pBatchingEffect != nullptr)
+	{
+		m_pBatchingEffect->Update();
+	}
+
 	if (m_pInputKeyboard->GetTrigger(DIK_BACK) == true)
 	{// バックスペースでリセット
 		CObject::ReleaseAll();
@@ -449,6 +482,7 @@ void CManager::Update(void)
 		m_pScore->Add(1);
 	}
 
+	// ランキング機能の仮置き
 	RankingTest();
 }
 

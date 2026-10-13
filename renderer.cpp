@@ -13,6 +13,7 @@
 #include "renderer.h"
 #include "object.h"
 #include "debugproc.h"
+#include "batchingeffect.h"
 
 //=============================================================================
 // マクロ定義
@@ -383,6 +384,13 @@ void CRenderer::SetFeedback(void)
 
 	// オブジェクトの描画
 	CObject::DrawAll();
+
+	// バッチ描画エフェクトの描画
+	if (pBatchingEffect != nullptr)
+	{
+		pBatchingEffect->Draw();
+	}
+
 
 	if (m_isEnableFeedback == true)
 	{// フィードバックエフェクトがオンなら前回の画面も描画
