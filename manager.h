@@ -33,7 +33,7 @@ class CTimer;				// タイマークラス
 
 class CObject3D;			// オブジェクト3Dクラス
 
-class CObjectLoader;
+class CObjectLoader;		// オブジェクトローダークラス
 
 class CMyImGui;				// ImGuiクラス
 class CCanvas;				// キャンバスクラス

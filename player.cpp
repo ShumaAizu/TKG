@@ -29,6 +29,9 @@
 #include "item.h"
 #include "batchingeffect.h"
 
+#include "gimmick.h"
+#include "rotationgimmick.h"
+
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
@@ -98,7 +101,7 @@ CPlayer::CPlayer(int nPriority) : CObject(nPriority)
 	// 各メンバ変数クリア
 	memset(&m_apModel, NULL, sizeof(CModel*) * MAX_PARTS);
 	m_nNumModel = 0;
-	m_pMotion = NULL;
+	m_pMotion = nullptr;
 	m_pos = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 	m_rot = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 	m_move = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
@@ -195,7 +198,7 @@ void CPlayer::Uninit(void)
 	// 全パーツの開放
 	for (int nCntParts = 0; nCntParts < MAX_PARTS; nCntParts++)
 	{
-		if (m_apModel[nCntParts] == NULL)
+		if (m_apModel[nCntParts] == nullptr)
 		{// もしモデルが存在しなければ
 			// スキップ
 			continue;
@@ -204,14 +207,14 @@ void CPlayer::Uninit(void)
 		// パーツの終了処理
 		m_apModel[nCntParts]->Uninit();
 		delete m_apModel[nCntParts];
-		m_apModel[nCntParts] = NULL;
+		m_apModel[nCntParts] = nullptr;
 	}
 
 	// モーションインスタンスの破棄
-	if (m_pMotion != NULL)
+	if (m_pMotion != nullptr)
 	{
 		delete m_pMotion;
-		m_pMotion = NULL;
+		m_pMotion = nullptr;
 	}
 
 	// 開放
@@ -230,8 +233,6 @@ void CPlayer::Update(void)
 	CInputJoypad* pInputJoypad = pManager->GetInputJoypad();
 	CCamera* pCamera = pManager->GetCamera();
 	CBatchingEffect* pBatchiEffect = pManager->GetBatchingEffect();
-
-	static float fRotMove = 0.0f, fRotDest = 0.0f, fRotDiff = 0.0f;
 
 	D3DXVECTOR3 KeyboardMove = { 0.0f, 0.0f, 0.0f };
 	static D3DXVECTOR3 KeyboardMoveOld = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
@@ -275,7 +276,7 @@ void CPlayer::Update(void)
 	if (m_fMoveKeyboard != 0.0f)
 	{// 移動していたら
 
-		fRotDest = atan2f(KeyboardMove.x, KeyboardMove.z) + pCamera->GetRotation().y;	// 目的地への向き
+		float fRotDest = atan2f(KeyboardMove.x, KeyboardMove.z) + pCamera->GetRotation().y;	// 目的地への向き
 
 		// 目的向きに移動方向を合わせる
 		KeyboardMove.x = sinf(fRotDest) * m_fMoveKeyboard;
@@ -303,9 +304,6 @@ void CPlayer::Update(void)
 				D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f),
 				15.0f,
 				CBatchingEffect::TYPE::TYPE_TRAJECTORY);
-
-			// 振動
-			pInputJoypad->SetVibration(1500, 1500, 1);
 		}
 
 	}
@@ -341,8 +339,32 @@ void CPlayer::Update(void)
 
 	// 当たり判定
 	CollisionField();
-	CollisionWall();
+	CollisionRotationGimmick();
+	//CollisionWall();
 	CollisionItem();
+
+	RangeRestriction();
+
+	// 屈服の壁処理
+	if (m_pos.x + m_fRadius > 250.0f)
+	{
+		m_pos.x = 250.0f - m_fRadius;
+	}
+
+	if (m_pos.x - m_fRadius < -250.0f)
+	{
+		m_pos.x = -250.0f + m_fRadius;
+	}
+
+	if (m_pos.z + m_fRadius > 250.0f)
+	{
+		m_pos.z = 250.0f - m_fRadius;
+	}
+
+	if (m_pos.z - m_fRadius < -250.0f)
+	{
+		m_pos.z = -250.0f + m_fRadius;
+	}
 
 	// 慣性を更新
 	m_fValueRot += (0.0f - m_fValueRot) * m_fRotAttenuation;
@@ -357,9 +379,6 @@ void CPlayer::Update(void)
 	CDebugProc::Print("\n半径 : [← / →] (%.1f)\n", m_fRadius);
 	CDebugProc::Print("回転速度 : [↑ / ↓] (%.3f)\n", m_fSpeed);
 	CDebugProc::Print("回転減衰 : [Y / H] (%.2f)\n", m_fRotAttenuation);
-
-	// モーションの更新
-	//m_pMotion->Update();
 }
 
 //=============================================================================
@@ -566,8 +585,12 @@ bool CPlayer::CollisionField(void)
 
 			if (m_pos.y - m_fRadius < fHeight)
 			{
+				//m_move.y = m_move.y * -0.525f;
 				m_pos.y = fHeight + m_fRadius;
+
+
 				m_bJump = false;
+
 			}
 
 			// 次のオブジェクトへ
@@ -677,6 +700,62 @@ bool CPlayer::CollisionItem(void)
 	return isCollision;
 }
 
+bool CPlayer::CollisionRotationGimmick(void)
+{
+	// 情報取得
+	CManager* pManager = CManager::GetInstance();
+
+	// ローカル変数
+	bool isCollision = false;
+
+	// オブジェクト探索
+	CObject* pObject = nullptr;
+	CObject* pObjectNext = nullptr;
+	CGimmick* pGimmick = nullptr;
+	CRotationGimmick* pRotGimmick = nullptr;
+
+	for (int nCntPriority = 0; nCntPriority < PRIORITY_MAX; nCntPriority++)
+	{
+		// 先頭オブジェクト取得
+		pObject = CObject::GetTop(nCntPriority);
+
+		while (pObject != nullptr)
+		{// オブジェクトが消えるまでループ
+			pObjectNext = pObject->GetNext();
+
+			if (pObject->GetType() != CObject::TYPE_GIMMICK)
+			{// ギミックじゃなかったらスキップ
+				pObject = pObjectNext;
+				continue;
+			}
+
+			// ギミックだったらキャスト
+			pGimmick = static_cast<CGimmick*>(pObject);
+
+			if (pGimmick->GetType() != CGimmick::TYPE::TYPE_ROTATION)
+			{// 回転ギミックじゃなかったらスキップ
+				pObject = pObjectNext;
+				continue;
+			}
+
+			// 回転ギミックだったらキャスト
+			pRotGimmick = static_cast<CRotationGimmick*>(pGimmick);
+
+			isCollision = pRotGimmick->Collision(m_pos, m_fRadius);
+
+			if (isCollision == true)
+			{
+				m_bJump = false;
+			}
+
+			// 次のオブジェクトへ
+			pObject = pObjectNext;
+		}
+	}
+
+	return isCollision;
+}
+
 //=============================================================================
 // 位置指定処理
 //=============================================================================
@@ -759,5 +838,25 @@ void CPlayer::Debug(void)
 	if (pInputKeyboard->GetRepeat(DIK_H) == true && m_fRotAttenuation > 0.01f)
 	{// H入力で小さく
 		m_fRotAttenuation += -0.01f;
+	}
+}
+
+#define WORLD_RADIUS		(500.0f)		// 世界の半径
+
+//========================================================================
+// 範囲制限処理
+//========================================================================
+void CPlayer::RangeRestriction(void)
+{
+	D3DXVECTOR3 Center = INIT_D3DXVEC3;
+
+	D3DXVECTOR3 ContractionVec = m_pos - Center;
+
+	float fDiff = D3DXVec3LengthSq(&ContractionVec);
+
+	if (fDiff + m_fRadius > WORLD_RADIUS * WORLD_RADIUS)
+	{
+		D3DXVec3Normalize(&ContractionVec, &ContractionVec);
+		m_pos = ContractionVec * WORLD_RADIUS;
 	}
 }

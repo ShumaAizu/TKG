@@ -24,14 +24,14 @@ CItem* CItem::Create(const D3DXVECTOR3 pos,
 	// 最大チェック
 	if (GetNumAll() >= MAX_OBJECT)
 	{// これ以上生成できなければ
-		// NULLを返し終了
-		return NULL;
+		// nullptrを返し終了
+		return nullptr;
 	}
 
 	// ローカル変数宣言
-	CItem* pItem = NULL;		// ポインタ保存用
+	CItem* pItem = nullptr;		// ポインタ保存用
 
-	// 惑星のインスタンス生成
+	// アイテムのインスタンス生成
 	pItem = new CItem;
 
 	// 初期化処理
@@ -46,7 +46,9 @@ CItem* CItem::Create(const D3DXVECTOR3 pos,
 //=============================================================================
 CItem::CItem(int nPriority) : CObjectX(nPriority)
 {
-
+	// メンバ変数クリア
+	m_fRadius = 0.0f;
+	m_fAngle = 0.0f;
 }
 
 //=============================================================================
@@ -77,6 +79,7 @@ HRESULT CItem::Init(const D3DXVECTOR3 pos,
 	// 各種値設定
 	CObjectX::Init(pos, rot, pModelFile);
 	m_fRadius = fRadius;
+	m_fAngle = D3DX_PI;
 
 	SetType(TYPE::TYPE_ITEM);
 
@@ -97,6 +100,24 @@ void CItem::Uninit(void)
 //=============================================================================
 void CItem::Update(void)
 {
+	// 情報取得
+	D3DXVECTOR3 pos = GetPosition();
+	D3DXVECTOR3 rot = GetRotation();
+
+	// てきとうな数値加算
+	m_fAngle += 0.05f;
+	rot.y += -0.02f;
+
+	// 範囲内制限
+	m_fAngle = NumCirculation(m_fAngle, -D3DX_PI, D3DX_PI);
+	rot.y = NumCirculation(rot.y, -D3DX_PI, D3DX_PI);
+
+	pos.y = pos.y + sinf(m_fAngle) * 0.125f;
+
+	// 再設定
+	SetPosition(pos);
+	SetRotation(rot);
+
 	// 更新処理
 	CObjectX::Update();
 }

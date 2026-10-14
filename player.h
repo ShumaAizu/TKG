@@ -53,10 +53,13 @@ public:
 	bool CollisionField(void);
 	bool CollisionWall(void);
 	bool CollisionItem(void);
+	bool CollisionRotationGimmick(void);
 
 	void Debug(void);
 
 private:
+	void RangeRestriction(void);
+
 	CModel* m_apModel[MAX_PARTS];		// モデルへのポインタ
 	int m_nNumModel;					// モデルの総数
 	CMotion* m_pMotion;					// モーションへのポインタ

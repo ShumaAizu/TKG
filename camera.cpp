@@ -52,12 +52,12 @@ CCamera::~CCamera()
 HRESULT CCamera::Init(void)
 {
 	// ÉÅÉìÉoïœêîèâä˙âª
-	m_posV = D3DXVECTOR3(0.0f, 50.0f, -100.0f);
+	m_posV = D3DXVECTOR3(0.0f, 450.0f, -450.0f);
 	m_posR = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 	m_vecU = INIT_VECU;
-	m_rot = D3DXVECTOR3(0.0f, D3DX_PI, 0.0f);
+	m_rot = D3DXVECTOR3(0.75f, D3DX_PI, 0.0f);
 	m_move = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
-	m_fRadiusVertical = 0.0f;
+	m_fRadiusVertical = WHEEL_DELTA * 4.5f;
 	m_fRadiusHorizontal = 0.0f;
 
 	return S_OK;

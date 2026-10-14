@@ -30,7 +30,7 @@ CBatchingEffect* CBatchingEffect::Create(const int nMax, const char* pTexFileNam
 #endif // !ENABLE_LINKLIST_OBJECT
 
 	// ローカル変数宣言
-	CBatchingEffect* pBatchingEffect = NULL;		// ポインタ保存用
+	CBatchingEffect* pBatchingEffect = nullptr;		// ポインタ保存用
 
 	// バッチ描画エフェクトのインスタンス生成
 	pBatchingEffect = new CBatchingEffect;
@@ -48,8 +48,8 @@ CBatchingEffect* CBatchingEffect::Create(const int nMax, const char* pTexFileNam
 CBatchingEffect::CBatchingEffect()
 {
 	// メンバ変数クリア
-	m_pVtxBuff = NULL;
-	m_pIdxBuff = NULL;
+	m_pVtxBuff = nullptr;
+	m_pIdxBuff = nullptr;
 	m_nIdxTexture = 0;
 	m_nMax = 0;
 	m_nNum = 0;
@@ -91,7 +91,7 @@ HRESULT CBatchingEffect::Init(const int nMax, const char* pTexFileName)
 		FVF_VERTEX_3D,
 		D3DPOOL_MANAGED,
 		&m_pVtxBuff, 
-		NULL);
+		nullptr);
 
 	// テクスチャの登録
 	m_nIdxTexture = pTexture->Register(pTexFileName);
@@ -139,7 +139,7 @@ HRESULT CBatchingEffect::Init(const int nMax, const char* pTexFileName)
 		D3DFMT_INDEX16,
 		D3DPOOL_MANAGED,
 		&m_pIdxBuff,
-		NULL);
+		nullptr);
 
 	WORD* pIdx;		// インデックス情報へのポインタ
 
@@ -171,17 +171,17 @@ HRESULT CBatchingEffect::Init(const int nMax, const char* pTexFileName)
 void CBatchingEffect::Uninit(void)
 {
 	// 頂点バッファの破棄
-	if (m_pVtxBuff != NULL)
+	if (m_pVtxBuff != nullptr)
 	{
 		m_pVtxBuff->Release();
-		m_pVtxBuff = NULL;
+		m_pVtxBuff = nullptr;
 	}
 
 	// インデックスバッファの破棄
-	if (m_pIdxBuff != NULL)
+	if (m_pIdxBuff != nullptr)
 	{
 		m_pIdxBuff->Release();
-		m_pIdxBuff = NULL;
+		m_pIdxBuff = nullptr;
 	}
 }
 
@@ -195,7 +195,7 @@ void CBatchingEffect::Update(void)
 	{
 		if (m_vType.at(nCntEffect) == TYPE::TYPE_TRAJECTORY)
 		{
-			m_vRadius.at(nCntEffect) += -1.0f;	// 半径を小さくする
+			m_vRadius.at(nCntEffect) += -0.5f;	// 半径を小さくする
 			m_vCol.at(nCntEffect).a += -0.025f;
 
 			if (m_vRadius.at(nCntEffect) < 0.0f || m_vCol.at(nCntEffect).a < 0.0f)
@@ -240,7 +240,7 @@ void CBatchingEffect::Draw(void)
 		D3DXMatrixIdentity(&m_vMtxWorld.at(nCntEffect));
 
 		// カメラに対して正面に向ける
-		D3DXMatrixInverse(&m_vMtxWorld.at(nCntEffect), NULL, &mtxView);	// 逆行列を求める
+		D3DXMatrixInverse(&m_vMtxWorld.at(nCntEffect), nullptr, &mtxView);	// 逆行列を求める
 
 		m_vMtxWorld.at(nCntEffect)._41 = 0.0f;		// マトリックス(行列)の内容
 		m_vMtxWorld.at(nCntEffect)._42 = 0.0f;

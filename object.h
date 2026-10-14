@@ -29,10 +29,12 @@ public:
 	typedef enum TYPE
 	{
 		TYPE_NONE = 0,		// なにもない
+		TYPE_UI,			// UI
 		TYPE_PLAYER,		// プレイヤー
 		TYPE_ITEM,			// アイテム
 		TYPE_FIELD,			// フィールド
 		TYPE_WALL,			// ウォール
+		TYPE_GIMMICK,		// ギミック
 		TYPE_MAX			// 最大
 	}TYPE;
 

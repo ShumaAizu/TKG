@@ -493,6 +493,65 @@ void CObjectX::Draw(void)
 {
 #if 1
 	// デバイスの取得
+	CManager * pManager = CManager::GetInstance();
+	CRenderer* pRenderer = pManager->GetRenderer();
+	LPDIRECT3DDEVICE9 pDevice = pRenderer->GetDevice();
+	CTexture* pTexture = pManager->GetTextrue();
+
+	D3DXMATRIX mtxRot, mtxTrans, mtxScale;		// 計算用マトリックス
+	D3DMATERIAL9 matDef;						// 現在のマテリアル保存用
+	D3DXMATERIAL* pMat;							// マテリアルデータへのポインタ
+
+	D3DXMATERIAL mat;							// マテリアル保持用
+
+	// ライトをオフにする
+	//pDevice->SetRenderState(D3DRS_LIGHTING, FALSE);
+
+	// ワールドマトリックスの初期化
+	D3DXMatrixIdentity(&m_mtxWorld);
+
+	// 向きを反映
+	D3DXMatrixRotationYawPitchRoll(&mtxRot, m_rot.y, m_rot.x, m_rot.z);
+	D3DXMatrixMultiply(&m_mtxWorld, &m_mtxWorld, &mtxRot);
+
+	// 位置を反映
+	D3DXMatrixTranslation(&mtxTrans, m_pos.x, m_pos.y, m_pos.z);
+	D3DXMatrixMultiply(&m_mtxWorld, &m_mtxWorld, &mtxTrans);
+
+	// ワールドマトリックスの設定
+	pDevice->SetTransform(D3DTS_WORLD, &m_mtxWorld);
+
+	// 現在のマテリアルを取得
+	pDevice->GetMaterial(&matDef);
+
+	// マテリアルデータへのポインタを取得
+	pMat = (D3DXMATERIAL*)m_pBuffMat->GetBufferPointer();
+
+	for (int nCntMat = 0; nCntMat < (int)m_dwNumMat; nCntMat++)
+	{
+		mat = pMat[nCntMat];
+
+		//mat.MatD3D.Diffuse = D3DXCOLOR(D3DXCOLOR(0.95f, 0.67f, 0.09f, 1.0f));
+
+		// マテリアルの設定
+		pDevice->SetMaterial(&mat.MatD3D);
+
+		// テクスチャの設定
+		pDevice->SetTexture(0, pTexture->GetAddress(m_vIdxTexture.at(nCntMat)));
+
+		// モデル(パーツ)の描画
+		m_pMesh->DrawSubset(nCntMat);
+	}
+
+	// 保存していたマテリアルを戻す
+	pDevice->SetMaterial(&matDef);
+
+	// ライトをオンにする
+	pDevice->SetRenderState(D3DRS_LIGHTING, TRUE);
+#endif
+
+#if 0
+	// デバイスの取得
 	CManager* pManager = CManager::GetInstance();
 	CRenderer* pRenderer = pManager->GetRenderer();
 	LPDIRECT3DDEVICE9 pDevice = pRenderer->GetDevice();
@@ -615,6 +674,8 @@ void CObjectX::Draw(void)
 
 	// ライトをオンにする
 	pDevice->SetRenderState(D3DRS_LIGHTING, TRUE);
+
+	pDevice->SetRenderState(D3DRS_NORMALIZENORMALS, false);
 #endif
 
 #if 0
@@ -691,7 +752,79 @@ void CObjectX::Draw(void)
 	pDevice->SetTransform(D3DTS_PROJECTION, &mtxProjectionDef);
 #endif
 
-	pDevice->SetRenderState(D3DRS_NORMALIZENORMALS, false);
+#if 0
+	// デバイスの取得
+	CManager* pManager = CManager::GetInstance();
+	CRenderer* pRenderer = pManager->GetRenderer();
+	LPDIRECT3DDEVICE9 pDevice = pRenderer->GetDevice();
+	CTexture* pTexture = pManager->GetTextrue();
+
+	D3DXMATRIX mtxRot, mtxTrans, mtxScale;		// 計算用マトリックス
+	D3DMATERIAL9 matDef;						// 現在のマテリアル保存用
+	D3DXMATERIAL* pMat;							// マテリアルデータへのポインタ
+
+	LPDIRECT3DSURFACE9 pRenderDef, pZBuffDef;
+	D3DVIEWPORT9 viewportDef;
+	D3DXMATRIX mtxViewDef, mtxProjectionDef;
+	CCamera* pCamera = static_cast<CCamera*>(pManager->GetFreeCamera());
+
+	// 現在の各デバイス設定を取得 (一時保存)
+	pDevice->GetRenderTarget(0, &pRenderDef);
+	pDevice->GetDepthStencilSurface(&pZBuffDef);
+	pDevice->GetViewport(&viewportDef);
+	pDevice->GetTransform(D3DTS_VIEW, &mtxViewDef);
+	pDevice->GetTransform(D3DTS_PROJECTION, &mtxProjectionDef);
+
+	// レンダリングターゲットの変更
+	pRenderer->ChangeTarget(D3DXVECTOR3(0.0f, 0.0f, -250.0f), D3DXVECTOR3(0.0f, 0.0f, 0.0f), pCamera->GetVectorU());
+
+	// レンダリングターゲット用テクスチャのクリア
+	pDevice->Clear(0, NULL,
+		(D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER),
+		D3DCOLOR_RGBA(0, 0, 0, 0), 1.0f, 0);
+
+	// ワールドマトリックスの初期化
+	D3DXMatrixIdentity(&m_mtxWorld);
+
+	// 向きを反映
+	D3DXMatrixRotationYawPitchRoll(&mtxRot, m_rot.y, m_rot.x, m_rot.z);
+	D3DXMatrixMultiply(&m_mtxWorld, &m_mtxWorld, &mtxRot);
+
+	// 位置を反映
+	D3DXMatrixTranslation(&mtxTrans, m_pos.x, m_pos.y, m_pos.z);
+	D3DXMatrixMultiply(&m_mtxWorld, &m_mtxWorld, &mtxTrans);
+
+	// ワールドマトリックスの設定
+	pDevice->SetTransform(D3DTS_WORLD, &m_mtxWorld);
+
+	// 現在のマテリアルを取得
+	pDevice->GetMaterial(&matDef);
+
+	// マテリアルデータへのポインタを取得
+	pMat = (D3DXMATERIAL*)m_pBuffMat->GetBufferPointer();
+
+	for (int nCntMat = 0; nCntMat < (int)m_dwNumMat; nCntMat++)
+	{
+		// マテリアルの設定
+		pDevice->SetMaterial(&pMat[nCntMat].MatD3D);
+
+		// テクスチャの設定
+		pDevice->SetTexture(0, pTexture->GetAddress(m_pIdxTexture[nCntMat]));
+
+		// モデル(パーツ)の描画
+		m_pMesh->DrawSubset(nCntMat);
+	}
+
+	// 保存していたマテリアルを戻す
+	pDevice->SetMaterial(&matDef);
+
+	// 保存していたデバイス設定を元に戻す
+	pDevice->SetRenderTarget(0, pRenderDef);
+	pDevice->SetDepthStencilSurface(pZBuffDef);
+	pDevice->SetViewport(&viewportDef);
+	pDevice->SetTransform(D3DTS_VIEW, &mtxViewDef);
+	pDevice->SetTransform(D3DTS_PROJECTION, &mtxProjectionDef);
+#endif
 }
 
 //=============================================================================

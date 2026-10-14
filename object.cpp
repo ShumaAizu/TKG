@@ -55,13 +55,13 @@ CObject::CObject(int nPriority)
 #endif // !ENABLE_LINKLIST_OBJECT
 
 #ifdef ENABLE_LINKLIST_OBJECT
-	if (m_apTop[nPriority] == NULL)
+	if (m_apTop[nPriority] == nullptr)
 	{// 先頭オブジェクトが存在しなければ
 		m_apTop[nPriority] = this;
-		m_pPrev = NULL;
+		m_pPrev = nullptr;
 	}
 
-	if (m_apCur[nPriority] != NULL)
+	if (m_apCur[nPriority] != nullptr)
 	{// 最後尾オブジェクトが存在していれば
 		// 自分自身の前のオブジェクトに
 		m_pPrev = m_apCur[nPriority];
@@ -72,7 +72,7 @@ CObject::CObject(int nPriority)
 
 	// 最後尾オブジェクトへのポインタに自分自身を入れる
 	m_apCur[nPriority] = this;
-	m_pNext = NULL;
+	m_pNext = nullptr;
 
 	// 自分の優先順位を保存
 	m_nPriority = nPriority;
@@ -112,15 +112,15 @@ void CObject::ReleaseAll(void)
 
 #ifdef ENABLE_LINKLIST_OBJECT
 	// ローカル変数
-	CObject* pObject = NULL;
-	CObject* pNextObject = NULL;
+	CObject* pObject = nullptr;
+	CObject* pNextObject = nullptr;
 
 	for (int nCntPriority = 0; nCntPriority < PRIORITY_MAX; nCntPriority++)
 	{
 		// 先頭オブジェクトを取得
 		pObject = m_apTop[nCntPriority];
 
-		while (pObject != NULL)
+		while (pObject != nullptr)
 		{// オブジェクトへのポインタが存在しなくなるまで
 			// 次のオブジェクトへのポインタを保存
 			pNextObject = pObject->m_pNext;
@@ -138,7 +138,7 @@ void CObject::ReleaseAll(void)
 		// 先頭オブジェクトを取得
 		pObject = m_apTop[nCntPriority];
 
-		while (pObject != NULL)
+		while (pObject != nullptr)
 		{// オブジェクトへのポインタが存在しなくなるまで
 			// 次のオブジェクトへのポインタを保存
 			pNextObject = pObject->m_pNext;
@@ -187,18 +187,18 @@ void CObject::UpdateAll(void)
 
 #ifdef ENABLE_LINKLIST_OBJECT
 	// ローカル変数
-	CObject* pObject = NULL;
-	CObject* pNextObject = NULL;
+	CObject* pObject = nullptr;
+	CObject* pNextObject = nullptr;
 
 	for (int nCntPriority = 0; nCntPriority < PRIORITY_MAX; nCntPriority++)
 	{
 		// 先頭オブジェクトを取得
 		pObject = m_apTop[nCntPriority];
 
-		while (pObject != NULL)
+		while (pObject != nullptr)
 		{// オブジェクトへのポインタが存在しなくなるまで
 			// 次のオブジェクトへのポインタを保存
-			if (m_apTop[nCntPriority] == NULL)
+			if (m_apTop[nCntPriority] == nullptr)
 			{
 				break;
 			}
@@ -221,7 +221,7 @@ void CObject::UpdateAll(void)
 		// 先頭オブジェクトを取得
 		pObject = m_apTop[nCntPriority];
 
-		while (pObject != NULL)
+		while (pObject != nullptr)
 		{// オブジェクトへのポインタが存在しなくなるまで
 			// 次のオブジェクトへのポインタを保存
 			pNextObject = pObject->m_pNext;
@@ -248,7 +248,7 @@ void CObject::DrawAll(void)
 	CManager* pManager = CManager::GetInstance();
 	CRenderer* pRenderer = pManager->GetRenderer();
 	LPDIRECT3DDEVICE9 pDevice = pRenderer->GetDevice();
-	CCamera* pCamera = NULL;
+	CCamera* pCamera = nullptr;
 
 	// カメラの取得
 	pCamera = pManager->GetCamera();
@@ -285,7 +285,7 @@ void CObject::DrawAll(void)
 	{
 		for (int nCntObject = 0; nCntObject < MAX_OBJECT; nCntObject++)
 		{
-			if (m_apObject[nCntPriority][nCntObject] == NULL)
+			if (m_apObject[nCntPriority][nCntObject] == nullptr)
 			{// オブジェクトが存在していない
 				// スキップ
 				continue;
@@ -299,15 +299,15 @@ void CObject::DrawAll(void)
 
 #ifdef ENABLE_LINKLIST_OBJECT
 	// ローカル変数
-	CObject* pObject = NULL;
-	CObject* pNextObject = NULL;
+	CObject* pObject = nullptr;
+	CObject* pNextObject = nullptr;
 
 	for (int nCntPriority = 0; nCntPriority < PRIORITY_MAX; nCntPriority++)
 	{
 		// 先頭オブジェクトを取得
 		pObject = m_apTop[nCntPriority];
 
-		while (pObject != NULL)
+		while (pObject != nullptr)
 		{// オブジェクトへのポインタが存在しなくなるまで
 			// 次のオブジェクトへのポインタを保存
 			pNextObject = pObject->m_pNext;
@@ -343,7 +343,7 @@ void CObject::Release(void)
 	const int nPriority = m_nPriority;
 	const int nID = m_nID;
 
-	if (m_apObject[m_nPriority][nID] == NULL)
+	if (m_apObject[m_nPriority][nID] == nullptr)
 	{// オブジェクトが存在しない
 		// 関数終了
 		return;
@@ -353,7 +353,7 @@ void CObject::Release(void)
 	delete m_apObject[nPriority][nID];
 
 	// 自分の位置にNULLを
-	m_apObject[nPriority][nID] = NULL;
+	m_apObject[nPriority][nID] = nullptr;
 	m_nNumAll--;
 #endif // !ENABLE_LINKLIST_OBJECT
 
@@ -368,31 +368,31 @@ void CObject::Release(void)
 //=============================================================================
 void CObject::Delete(void)
 {
-	if (m_pPrev != NULL && m_pNext != NULL)
+	if (m_pPrev != nullptr && m_pNext != nullptr)
 	{// 前のオブジェクトも次のオブジェクトもあるのなら
 		// 自分の前のオブジェクトと次のオブジェクトを繋ぎ直す
 		m_pPrev->m_pNext = m_pNext;
 		m_pNext->m_pPrev = m_pPrev;
 	}
 
-	if (m_pPrev == NULL && m_pNext == NULL)
+	if (m_pPrev == nullptr && m_pNext == nullptr)
 	{// 前のオブジェクトも次のオブジェクトもないなら (自分しかいない)
 		// オブジェクトをまっさらにする
-		m_apTop[m_nPriority] = NULL;
-		m_apCur[m_nPriority] = NULL;
+		m_apTop[m_nPriority] = nullptr;
+		m_apCur[m_nPriority] = nullptr;
 	}
 	else
 	{
-		if (m_pPrev == NULL)
+		if (m_pPrev == nullptr)
 		{// もし自分が先頭だったら (前のオブジェクトが存在しない)
 			m_apTop[m_nPriority] = m_pNext;
-			m_apTop[m_nPriority]->m_pPrev = NULL;
+			m_apTop[m_nPriority]->m_pPrev = nullptr;
 		}
 
-		if (m_pNext == NULL)
+		if (m_pNext == nullptr)
 		{// もし自分が最後尾だったら (次のオブジェクトが存在しない)
 			m_apCur[m_nPriority] = m_pPrev;
-			m_apCur[m_nPriority]->m_pNext = NULL;
+			m_apCur[m_nPriority]->m_pNext = nullptr;
 		}
 	}
 

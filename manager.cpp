@@ -20,13 +20,17 @@
 #include "objectX.h"
 #include "camera.h"
 #include "light.h"
+#include "ui.h"
 
 #include "objectloader.h"
 #include "player.h"
 #include "field.h"
 #include "wall.h"
 #include "item.h"
+#include "gimmick.h"
+#include "rotationgimmick.h"
 #include "score.h"
+#include "timer.h"
 
 #include "batchingeffect.h"
 
@@ -258,7 +262,7 @@ HRESULT CManager::Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow)
 	}
 
 	// 初期化処理
-	if (FAILED(m_pBatchingEffect->Init(10000, "data//TEXTURE//effect001.jpg")))
+	if (FAILED(m_pBatchingEffect->Init(10000, "data//TEXTURE//effect000.jpg")))
 	{// 失敗した場合
 		return -1;
 	}
@@ -276,13 +280,13 @@ HRESULT CManager::Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow)
 
 	m_pScore = CScore::Create(D3DXVECTOR3(17.5f, 650.0f, 0.0f), COLOR_WHITE, 35.0f, 70.0f, 75);
 
-	//CObject3D::Create();
+	CUI::Create(D3DXVECTOR3(1152.0f, 64.0f, 0.0f), D3DXVECTOR3(0.0f, 0.0f, D3DX_PI), 128.0f, 64.0f, "data//TEXTURE//title000.png");
 
-	//CObjectX::Create();
+	CTimer::Create(D3DXVECTOR3(500.0f, 64.0f, 0.0f), COLOR_WHITE, 70.0f, 140.0f);
 
-	//CField::Create(D3DXVECTOR3(0.0f, 0.0f, 0.0f), D3DXVECTOR3(0.0f, 0.0f, 0.0f), 250.0f, 250.0f, "data//TEXTURE//field000.jpg");
+	//CGimmick::Create(INIT_D3DXVEC3, INIT_D3DXVEC3, "data//MODEL//building000.x");
 
-	//CWall::Create(D3DXVECTOR3(0.0f, 250.0f, 250.0f), D3DXVECTOR3(0.0f, 0.0f, 0.0f), 250.0f, 250.0f, "data//TEXTURE//wall000.jpg");
+	CGimmick::Create(D3DXVECTOR3(0.0f, 0.0f, -150.0f), INIT_D3DXVEC3, "data//MODEL//button000.x");
 
 	m_pObjectLoader->Load("data//SCRIPTS//Test000.txt");
 
@@ -467,7 +471,19 @@ void CManager::Update(void)
 
 		//CObjectX::Create();
 
+		// スコア
 		m_pScore = CScore::Create(D3DXVECTOR3(17.5f, 650.0f, 0.0f), COLOR_WHITE, 35.0f, 70.0f, 75);
+
+		// タイトル的な
+		CUI::Create(D3DXVECTOR3(1152.0f, 64.0f, 0.0f), D3DXVECTOR3(0.0f, 0.0f, D3DX_PI), 128.0f, 64.0f, "data//TEXTURE//title000.png");
+
+		// タイマー
+		CTimer::Create(D3DXVECTOR3(500.0f, 64.0f, 0.0f), COLOR_WHITE, 70.0f, 140.0f);
+
+		CRotationGimmick::Create(D3DXVECTOR3(0.0f, 0.0f, 0.0f), D3DXVECTOR3(D3DX_PI * 0.25f, 0.0f, 0.0f), 50.0f, 250.0f, 50.0f, "data//MODEL//building000.x");
+
+		// ボタン
+		CGimmick::Create(D3DXVECTOR3(0.0f, 0.0f, -150.0f), INIT_D3DXVEC3, "data//MODEL//button000.x");
 
 		m_pObjectLoader->Load("data//SCRIPTS//Test000.txt");
 	}

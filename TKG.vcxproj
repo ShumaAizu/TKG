@@ -159,6 +159,7 @@
     <ClCompile Include="camera.cpp" />
     <ClCompile Include="debugproc.cpp" />
     <ClCompile Include="field.cpp" />
+    <ClCompile Include="gimmick.cpp" />
     <ClCompile Include="input.cpp" />
     <ClCompile Include="item.cpp" />
     <ClCompile Include="light.cpp" />
@@ -168,6 +169,7 @@
     <ClCompile Include="motion.cpp" />
     <ClCompile Include="number.cpp" />
     <ClCompile Include="object.cpp" />
+    <ClCompile Include="object2D.cpp" />
     <ClCompile Include="object3D.cpp" />
     <ClCompile Include="objectloader.cpp" />
     <ClCompile Include="objectX.cpp" />
@@ -177,10 +179,13 @@
     </ClCompile>
     <ClCompile Include="player.cpp" />
     <ClCompile Include="renderer.cpp" />
+    <ClCompile Include="rotationgimmick.cpp" />
     <ClCompile Include="score.cpp" />
     <ClCompile Include="sound.cpp" />
     <ClCompile Include="tcp_client.cpp" />
     <ClCompile Include="texture.cpp" />
+    <ClCompile Include="timer.cpp" />
+    <ClCompile Include="ui.cpp" />
     <ClCompile Include="wall.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -188,6 +193,7 @@
     <ClInclude Include="camera.h" />
     <ClInclude Include="debugproc.h" />
     <ClInclude Include="field.h" />
+    <ClInclude Include="gimmick.h" />
     <ClInclude Include="input.h" />
     <ClInclude Include="item.h" />
     <ClInclude Include="light.h" />
@@ -197,6 +203,7 @@
     <ClInclude Include="motion.h" />
     <ClInclude Include="number.h" />
     <ClInclude Include="object.h" />
+    <ClInclude Include="object2D.h" />
     <ClInclude Include="object3D.h" />
     <ClInclude Include="objectloader.h" />
     <ClInclude Include="objectX.h" />
@@ -204,10 +211,13 @@
     <ClInclude Include="player.h" />
     <ClInclude Include="protocol_ranking.h" />
     <ClInclude Include="renderer.h" />
+    <ClInclude Include="rotationgimmick.h" />
     <ClInclude Include="score.h" />
     <ClInclude Include="sound.h" />
     <ClInclude Include="tcp_client.h" />
     <ClInclude Include="texture.h" />
+    <ClInclude Include="timer.h" />
+    <ClInclude Include="ui.h" />
     <ClInclude Include="wall.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

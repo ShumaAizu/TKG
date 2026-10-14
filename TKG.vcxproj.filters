@@ -37,6 +37,12 @@
     <Filter Include="ヘッダー ファイル\03_Effect">
       <UniqueIdentifier>{63c65c43-d21c-4738-b541-0599934295e6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\10_Gimmick">
+      <UniqueIdentifier>{17f266ca-8ed7-45f3-b84c-cfdb51db77a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\10_Gimmick">
+      <UniqueIdentifier>{2a6e28c7-e5a4-46c5-9606-3362999b81da}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="camera.cpp">
@@ -110,6 +116,21 @@
     </ClCompile>
     <ClCompile Include="batchingeffect.cpp">
       <Filter>ソース ファイル\03_Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="ui.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="object2D.cpp">
+      <Filter>ソース ファイル\02_Object</Filter>
+    </ClCompile>
+    <ClCompile Include="timer.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="gimmick.cpp">
+      <Filter>ソース ファイル\10_Gimmick</Filter>
+    </ClCompile>
+    <ClCompile Include="rotationgimmick.cpp">
+      <Filter>ソース ファイル\10_Gimmick</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -187,6 +208,21 @@
     </ClInclude>
     <ClInclude Include="batchingeffect.h">
       <Filter>ヘッダー ファイル\03_Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="ui.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="object2D.h">
+      <Filter>ヘッダー ファイル\02_Object</Filter>
+    </ClInclude>
+    <ClInclude Include="timer.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="gimmick.h">
+      <Filter>ヘッダー ファイル\10_Gimmick</Filter>
+    </ClInclude>
+    <ClInclude Include="rotationgimmick.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
