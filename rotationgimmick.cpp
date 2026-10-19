@@ -113,10 +113,10 @@ void CRotationGimmick::Update(void)
 
 	D3DXVECTOR3 rot = GetRotation();
 
-	if (pInputKeyboard->GetPress(DIK_F3) == true)
+	if (pInputKeyboard->GetPress(DIK_F3) == true || true)
 	{
-		rot.y += 0.01f;
-		rot.y = NumCirculation(rot.y, -D3DX_PI, D3DX_PI);
+		rot.z += 0.01f;
+		rot.z = NumCirculation(rot.z, -D3DX_PI, D3DX_PI);
 	}
 
 	SetRotation(rot);

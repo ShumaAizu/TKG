@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/snippets/compiler/cmake/CMakeLists.txt
+  ClassicMain.cpp
+  SnippetArticulation.cpp
+  SnippetArticulationRender.cpp
+  SnippetArticulation.vcxproj -> C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\bin\win.x86_32.vc142.mt\checked\SnippetArticulation_32.exe

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\compiler\vc16win32\checked\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\bin\win.x86_32.vc142.mt\checked\PhysXFoundation_32.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\bin\win.x86_32.vc142.mt\checked\PhysXCommon_32.dll</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\bin\win.x86_32.vc142.mt\checked\PhysX_32.dll</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

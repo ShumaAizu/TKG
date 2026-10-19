@@ -21,6 +21,7 @@
 #include "camera.h"
 #include "light.h"
 #include "ui.h"
+#include "fade.h"
 
 #include "objectloader.h"
 #include "player.h"
@@ -36,6 +37,8 @@
 
 #include "tcp_client.h"
 #include "protocol_ranking.h"
+
+#include "meshring.h"
 
 //*****************************************************************************
 // マクロ定義
@@ -65,6 +68,7 @@ CManager::CManager()
 
 	m_pObjectLoader = nullptr;
 
+	m_pScene = nullptr;
 	m_pImGui = nullptr;
 	m_pCanvas = nullptr;
 
@@ -267,6 +271,17 @@ HRESULT CManager::Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow)
 		return -1;
 	}
 
+	// フェードのインスタンスを生成
+	if (m_pFade == nullptr)
+	{
+		m_pFade = new CFade;
+	}
+
+	if (m_pFade == nullptr)
+	{// 生成に失敗していたら
+		return -1;
+	}
+
 	// クライアントのインスタンスを生成
 	if (m_pTcpClient == nullptr)
 	{
@@ -278,17 +293,23 @@ HRESULT CManager::Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow)
 		return -1;
 	}
 
-	m_pScore = CScore::Create(D3DXVECTOR3(17.5f, 650.0f, 0.0f), COLOR_WHITE, 35.0f, 70.0f, 75);
+	// フェードのインスタンスを生成
+	if (m_pFade == nullptr)
+	{
+		m_pFade = new CFade;
+	}
 
-	CUI::Create(D3DXVECTOR3(1152.0f, 64.0f, 0.0f), D3DXVECTOR3(0.0f, 0.0f, D3DX_PI), 128.0f, 64.0f, "data//TEXTURE//title000.png");
+	if (m_pFade == nullptr)
+	{// 生成に失敗していたら
+		return -1;
+	}
 
-	CTimer::Create(D3DXVECTOR3(500.0f, 64.0f, 0.0f), COLOR_WHITE, 70.0f, 140.0f);
+	// 初期化処理
+	if (FAILED(m_pFade->Init(CScene::MODE_TITLE, COLOR_WHITE)))
+	{// 失敗した場合
+		return -1;
+	}
 
-	//CGimmick::Create(INIT_D3DXVEC3, INIT_D3DXVEC3, "data//MODEL//building000.x");
-
-	CGimmick::Create(D3DXVECTOR3(0.0f, 0.0f, -150.0f), INIT_D3DXVEC3, "data//MODEL//button000.x");
-
-	m_pObjectLoader->Load("data//SCRIPTS//Test000.txt");
 
 	// デバッグ表示の初期化
 	CDebugProc::Init();
@@ -317,6 +338,14 @@ void CManager::Uninit(void)
 		m_pTcpClient->Uninit();
 		delete m_pTcpClient;
 		m_pTcpClient = nullptr;
+	}
+
+	if (m_pFade != nullptr)
+	{// フェードを生成していたなら
+		// 開放
+		m_pFade->Uninit();
+		delete m_pFade;
+		m_pFade = nullptr;
 	}
 
 	if (m_pBatchingEffect != nullptr)
@@ -451,10 +480,10 @@ void CManager::Update(void)
 		m_pInputJoypad->Update();
 	}
 
-	// レンダラーの更新処理
-	if (m_pRenderer != nullptr)
+	// フェードの更新処理
+	if (m_pFade != nullptr)
 	{
-		m_pRenderer->Update();
+		m_pFade->Update();
 	}
 
 	// バッチ描画エフェクトの更新処理
@@ -463,39 +492,10 @@ void CManager::Update(void)
 		m_pBatchingEffect->Update();
 	}
 
-	if (m_pInputKeyboard->GetTrigger(DIK_BACK) == true)
-	{// バックスペースでリセット
-		CObject::ReleaseAll();
-
-		CObject3D::Create();
-
-		//CObjectX::Create();
-
-		// スコア
-		m_pScore = CScore::Create(D3DXVECTOR3(17.5f, 650.0f, 0.0f), COLOR_WHITE, 35.0f, 70.0f, 75);
-
-		// タイトル的な
-		CUI::Create(D3DXVECTOR3(1152.0f, 64.0f, 0.0f), D3DXVECTOR3(0.0f, 0.0f, D3DX_PI), 128.0f, 64.0f, "data//TEXTURE//title000.png");
-
-		// タイマー
-		CTimer::Create(D3DXVECTOR3(500.0f, 64.0f, 0.0f), COLOR_WHITE, 70.0f, 140.0f);
-
-		CRotationGimmick::Create(D3DXVECTOR3(0.0f, 0.0f, 0.0f), D3DXVECTOR3(D3DX_PI * 0.25f, 0.0f, 0.0f), 50.0f, 250.0f, 50.0f, "data//MODEL//building000.x");
-
-		// ボタン
-		CGimmick::Create(D3DXVECTOR3(0.0f, 0.0f, -150.0f), INIT_D3DXVEC3, "data//MODEL//button000.x");
-
-		m_pObjectLoader->Load("data//SCRIPTS//Test000.txt");
-	}
-
-	if (m_pInputKeyboard->GetRepeat(DIK_F1) == true)
+	// レンダラーの更新処理
+	if (m_pRenderer != nullptr)
 	{
-		m_pScore->Add(-1);
-	}
-
-	if (m_pInputKeyboard->GetRepeat(DIK_F2) == true)
-	{
-		m_pScore->Add(1);
+		m_pRenderer->Update();
 	}
 
 	// ランキング機能の仮置き
@@ -524,36 +524,36 @@ CManager* CManager::GetInstance(void)
 	return &manager;
 }
 
-////=============================================================================
-//// モードの設定
-////=============================================================================
-//void CManager::SetMode(CScene::MODE mode)
-//{
-//	// サウンドの停止
-//	m_pSound->Stop();
-//
-//	// 現在のモードの破棄
-//	if (m_pScene != nullptr)
-//	{
-//		// 終了処理
-//		m_pScene->Uninit();
-//		m_pScene = nullptr;
-//	}
-//
-//	// すべてのオブジェクトの破棄
-//	CObject::ReleaseAll();
-//
-//	// 新しいモードの生成
-//	m_pScene = CScene::Create(mode);
-//}
-//
-////=============================================================================
-//// モードの取得
-////=============================================================================
-//CScene::MODE CManager::GetMode(void)
-//{
-//	return m_pScene->GetMode();
-//}
+//=============================================================================
+// モードの設定
+//=============================================================================
+void CManager::SetMode(CScene::MODE mode)
+{
+	//// サウンドの停止
+	//m_pSound->Stop();
+
+	// 現在のモードの破棄
+	if (m_pScene != nullptr)
+	{
+		// 終了処理
+		m_pScene->Uninit();
+		m_pScene = nullptr;
+	}
+
+	// すべてのオブジェクトの破棄
+	CObject::ReleaseAll();
+
+	// 新しいモードの生成
+	m_pScene = CScene::Create(mode);
+}
+
+//=============================================================================
+// モードの取得
+//=============================================================================
+CScene::MODE CManager::GetMode(void)
+{
+	return m_pScene->GetMode();
+}
 
 //=============================================================================
 // ランキング実験用

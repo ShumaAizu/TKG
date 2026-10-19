@@ -43,6 +43,12 @@
     <Filter Include="ヘッダー ファイル\10_Gimmick">
       <UniqueIdentifier>{2a6e28c7-e5a4-46c5-9606-3362999b81da}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\04_Scene">
+      <UniqueIdentifier>{06d1035c-550a-4955-938f-68e60f37ac8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\04_Scene">
+      <UniqueIdentifier>{7f7d1efc-ffef-48d9-a40c-69ec1951f79e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="camera.cpp">
@@ -131,6 +137,27 @@
     </ClCompile>
     <ClCompile Include="rotationgimmick.cpp">
       <Filter>ソース ファイル\10_Gimmick</Filter>
+    </ClCompile>
+    <ClCompile Include="meshring.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="ringeffect.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="game.cpp">
+      <Filter>ソース ファイル\04_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="result.cpp">
+      <Filter>ソース ファイル\04_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="scene.cpp">
+      <Filter>ソース ファイル\04_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="title.cpp">
+      <Filter>ソース ファイル\04_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="fade.cpp">
+      <Filter>ソース ファイル\04_Scene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -223,6 +250,27 @@
     </ClInclude>
     <ClInclude Include="rotationgimmick.h">
       <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="meshring.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="ringeffect.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="fade.h">
+      <Filter>ヘッダー ファイル\04_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="game.h">
+      <Filter>ヘッダー ファイル\04_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="result.h">
+      <Filter>ヘッダー ファイル\04_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="title.h">
+      <Filter>ヘッダー ファイル\04_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="scene.h">
+      <Filter>ヘッダー ファイル\04_Scene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

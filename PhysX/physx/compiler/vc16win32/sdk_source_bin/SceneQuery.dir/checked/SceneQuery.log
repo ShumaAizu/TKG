@@ -1,0 +1,17 @@
+﻿  Building Custom Rule C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/source/compiler/cmake/CMakeLists.txt
+  SqAABBPruner.cpp
+  SqAABBTree.cpp
+  SqIncrementalAABBPruner.cpp
+  SqIncrementalAABBPrunerCore.cpp
+  SqIncrementalAABBTree.cpp
+  SqAABBTreeUpdateMap.cpp
+  SqBounds.cpp
+  SqCompoundPruner.cpp
+  SqCompoundPruningPool.cpp
+  SqBucketPruner.cpp
+  SqExtendedBucketPruner.cpp
+  SqMetaData.cpp
+  SqPruningPool.cpp
+  SqPruningStructure.cpp
+  SqSceneQueryManager.cpp
+  SceneQuery.vcxproj -> C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\bin\win.x86_32.vc142.mt\checked\SceneQuery_static_32.lib

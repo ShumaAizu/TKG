@@ -1,0 +1,12 @@
+﻿  Building Custom Rule C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/source/compiler/cmake/CMakeLists.txt
+  CctBoxController.cpp
+  CctCapsuleController.cpp
+  CctCharacterController.cpp
+  CctCharacterControllerCallbacks.cpp
+  CctCharacterControllerManager.cpp
+  CctController.cpp
+  CctObstacleContext.cpp
+  CctSweptBox.cpp
+  CctSweptCapsule.cpp
+  CctSweptVolume.cpp
+  PhysXCharacterKinematic.vcxproj -> C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\bin\win.x86_32.vc142.mt\debug\PhysXCharacterKinematic_static_32.lib

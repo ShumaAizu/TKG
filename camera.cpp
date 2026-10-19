@@ -17,7 +17,7 @@
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
-#define INIT_VECU		(D3DXVECTOR3(0.0f, 1.0f, 0.0f))			// ベクトル初期値
+#define INIT_VECU				(D3DXVECTOR3(0.0f, 1.0f, 0.0f))	// ベクトル初期値
 #define CAMERAPOSR_DIS			(175.0f)						// 視点と注視点との距離
 #define CAMERA_INERTIA			(0.115f)						// カメラ移動の慣性係数
 #define INITCAMERA_VECU			(D3DXVECTOR3(0.0f, 1.0f, 0.0f))	// カメラのベクトル初期値
@@ -52,10 +52,10 @@ CCamera::~CCamera()
 HRESULT CCamera::Init(void)
 {
 	// メンバ変数初期化
-	m_posV = D3DXVECTOR3(0.0f, 450.0f, -450.0f);
+	m_posV = D3DXVECTOR3(0.0f, 500.0f, -0.0f);
 	m_posR = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 	m_vecU = INIT_VECU;
-	m_rot = D3DXVECTOR3(0.75f, D3DX_PI, 0.0f);
+	m_rot = D3DXVECTOR3(0.5f, D3DX_PI, 0.0f);
 	m_move = D3DXVECTOR3(0.0f, 0.0f, 0.0f);
 	m_fRadiusVertical = WHEEL_DELTA * 4.5f;
 	m_fRadiusHorizontal = 0.0f;

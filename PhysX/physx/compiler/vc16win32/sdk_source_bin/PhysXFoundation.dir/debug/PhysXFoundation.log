@@ -1,0 +1,20 @@
+﻿  Building Custom Rule C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/source/compiler/cmake/CMakeLists.txt
+  PsAllocator.cpp
+  PsAssert.cpp
+  PsFoundation.cpp
+  PsMathUtils.cpp
+  PsString.cpp
+  PsTempAllocator.cpp
+  PsUtilities.cpp
+  PsWindowsAtomic.cpp
+  PsWindowsCpu.cpp
+  PsWindowsFPU.cpp
+  PsWindowsMutex.cpp
+  PsWindowsPrintString.cpp
+  PsWindowsSList.cpp
+  PsWindowsSocket.cpp
+  PsWindowsSync.cpp
+  PsWindowsThread.cpp
+  PsWindowsTime.cpp
+     ライブラリ C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/bin/win.x86_32.vc142.mt/debug/PhysXFoundation_32.lib とオブジェクト C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/bin/win.x86_32.vc142.mt/debug/PhysXFoundation_32.exp を作成中
+  PhysXFoundation.vcxproj -> C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\bin\win.x86_32.vc142.mt\debug\PhysXFoundation_32.dll

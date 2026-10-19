@@ -1,0 +1,15 @@
+# CMake generation dependency list for this directory.
+C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/ConfigureFileMt.cmake
+C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/GetCompilerAndPlatform.cmake
+C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/NvidiaBuildOptions.cmake
+C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/SetOutputPaths.cmake
+C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/snippets/compiler/cmake/CMakeLists.txt
+C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/snippets/compiler/cmake/SnippetRender.cmake
+C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/snippets/compiler/cmake/SnippetTemplate.cmake
+C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/snippets/compiler/cmake/SnippetUtils.cmake
+C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/snippets/compiler/cmake/SnippetVehicleTemplate.cmake
+C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/snippets/compiler/cmake/windows/CMakeLists.txt
+C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/snippets/compiler/cmake/windows/SnippetRender.cmake
+C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/snippets/compiler/cmake/windows/SnippetTemplate.cmake
+C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/snippets/compiler/cmake/windows/SnippetUtils.cmake
+C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/snippets/compiler/cmake/windows/SnippetVehicleTemplate.cmake

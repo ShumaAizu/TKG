@@ -13,6 +13,7 @@
 #include "renderer.h"
 #include "object.h"
 #include "debugproc.h"
+#include "fade.h"
 #include "batchingeffect.h"
 
 //=============================================================================
@@ -27,15 +28,15 @@
 CRenderer::CRenderer()
 {
 	// 各変数クリア
-	m_pD3D = NULL;
-	m_pD3DDevice = NULL;
+	m_pD3D = nullptr;
+	m_pD3DDevice = nullptr;
 
 	memset(&m_apTextureMT, NULL, sizeof(LPDIRECT3DTEXTURE9) * NUM_MULTITARGET);
 	memset(&m_apRenderMT, NULL, sizeof(LPDIRECT3DSURFACE9) * NUM_MULTITARGET);
-	m_pZBuffMT = NULL;
+	m_pZBuffMT = nullptr;
 	memset(&m_viewportMT, 0, sizeof(D3DVIEWPORT9));
 
-	m_pVtxBuffMT = NULL;
+	m_pVtxBuffMT = nullptr;
 	m_fPolygonMul = 0.0f;
 
 	m_isEnableFeedback = false;
@@ -160,7 +161,7 @@ HRESULT CRenderer::Init(HWND hWnd, BOOL bWindow)
 		0,
 		TRUE,
 		&m_pZBuffMT,
-		NULL);
+		nullptr);
 
 	// Zバッファを生成したバッファに設定
 	m_pD3DDevice->SetDepthStencilSurface(m_pZBuffMT);
@@ -209,7 +210,7 @@ HRESULT CRenderer::Init(HWND hWnd, BOOL bWindow)
 		FVF_VERTEX_2D,
 		D3DPOOL_MANAGED,
 		&m_pVtxBuffMT,
-		NULL);
+		nullptr);
 
 	VERTEX_2D* pVtx;			//頂点情報へのポインタ
 
@@ -254,55 +255,55 @@ HRESULT CRenderer::Init(HWND hWnd, BOOL bWindow)
 void CRenderer::Uninit(void)
 {
 	// 頂点バッファの破棄
-	if (m_pVtxBuffMT != NULL)
+	if (m_pVtxBuffMT != nullptr)
 	{
 		m_pVtxBuffMT->Release();
-		m_pVtxBuffMT = NULL;
+		m_pVtxBuffMT = nullptr;
 	}
 
 	// レンダリングターゲット用テクスチャの破棄
 	for (int nCntTexMT = 0; nCntTexMT < NUM_MULTITARGET; nCntTexMT++)
 	{
-		if (m_apTextureMT[nCntTexMT] == NULL)
+		if (m_apTextureMT[nCntTexMT] == nullptr)
 		{// 使用していなければスキップ
 			continue;
 		}
 
 		m_apTextureMT[nCntTexMT]->Release();
-		m_apTextureMT[nCntTexMT] = NULL;
+		m_apTextureMT[nCntTexMT] = nullptr;
 	}
 
 	// テクスチャレンダリング用インターフェースの破棄
 	for (int nCntRenderMT = 0; nCntRenderMT < NUM_MULTITARGET; nCntRenderMT++)
 	{
-		if (m_apRenderMT[nCntRenderMT] == NULL)
+		if (m_apRenderMT[nCntRenderMT] == nullptr)
 		{// 使用していなければスキップ
 			continue;
 		}
 
 		m_apRenderMT[nCntRenderMT]->Release();
-		m_apRenderMT[nCntRenderMT] = NULL;
+		m_apRenderMT[nCntRenderMT] = nullptr;
 	}
 
 	// テクスチャレンダリング用Zバッファの破棄
-	if (m_pZBuffMT != NULL)
+	if (m_pZBuffMT != nullptr)
 	{
 		m_pZBuffMT->Release();
-		m_pZBuffMT = NULL;
+		m_pZBuffMT = nullptr;
 	}
 
 	// Direct3Dデバイスの破棄
-	if (m_pD3DDevice != NULL)
+	if (m_pD3DDevice != nullptr)
 	{
 		m_pD3DDevice->Release();
-		m_pD3DDevice = NULL;
+		m_pD3DDevice = nullptr;
 	}
 
 	// Direct3Dオブジェクトの破棄
-	if (m_pD3D != NULL)
+	if (m_pD3D != nullptr)
 	{
 		m_pD3D->Release();
-		m_pD3D = NULL;
+		m_pD3D = nullptr;
 	}
 }
 
@@ -332,7 +333,7 @@ void CRenderer::Draw(void)
 	CFade* pFade = pManager->GetFade();
 
 	// 画面クリア(バックバッファとZバッファのクリア)
-	m_pD3DDevice->Clear(0, NULL,
+	m_pD3DDevice->Clear(0, nullptr,
 		(D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER),
 		D3DCOLOR_RGBA(0, 0, 0, 0), 1.0f, 0);
 
@@ -351,7 +352,7 @@ void CRenderer::Draw(void)
 	}
 
 	// バックバッファとフロントバッファの入れ替え
-	m_pD3DDevice->Present(NULL, NULL, NULL, NULL);
+	m_pD3DDevice->Present(nullptr, nullptr, nullptr, nullptr);
 }
 
 //=============================================================================
@@ -361,6 +362,7 @@ void CRenderer::SetFeedback(void)
 {
 	// 独立描画オブジェクトの取得
 	CManager* pManager = CManager::GetInstance();
+	CFade* pFade = pManager->GetFade();
 	CBatchingEffect* pBatchingEffect = pManager->GetBatchingEffect();
 
 	// 保存用変数
@@ -378,7 +380,7 @@ void CRenderer::SetFeedback(void)
 	ChangeTarget();
 
 	// レンダリングターゲット用テクスチャのクリア
-	m_pD3DDevice->Clear(0, NULL,
+	m_pD3DDevice->Clear(0, nullptr,
 		(D3DCLEAR_TARGET | D3DCLEAR_ZBUFFER),
 		D3DCOLOR_RGBA(32, 0, 32, 255), 1.0f, 0);
 
@@ -391,6 +393,11 @@ void CRenderer::SetFeedback(void)
 		pBatchingEffect->Draw();
 	}
 
+	// フェードの描画
+	if (pFade != nullptr)
+	{
+		pFade->Draw();
+	}
 
 	if (m_isEnableFeedback == true)
 	{// フィードバックエフェクトがオンなら前回の画面も描画

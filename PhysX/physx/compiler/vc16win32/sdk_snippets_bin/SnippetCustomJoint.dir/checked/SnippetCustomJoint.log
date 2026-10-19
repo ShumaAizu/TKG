@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/snippets/compiler/cmake/CMakeLists.txt
+  ClassicMain.cpp
+  PulleyJoint.cpp
+  SnippetCustomJoint.cpp
+  SnippetCustomJointRender.cpp
+  SnippetCustomJoint.vcxproj -> C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\bin\win.x86_32.vc142.mt\checked\SnippetCustomJoint_32.exe

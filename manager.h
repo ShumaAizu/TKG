@@ -15,6 +15,7 @@
 // インクルードヘッダー
 //*****************************************************************************
 #include "object.h"
+#include "scene.h"
 
 //*****************************************************************************
 // 前方宣言
@@ -76,6 +77,9 @@ public:
 	CFade* GetFade(void) const { return m_pFade; }
 	CPause* GetPause(void) const { return m_pPause; }
 
+	void SetMode(CScene::MODE mode);
+	CScene::MODE GetMode(void);
+
 	CTcpClient* GetTcpClient(void) { return m_pTcpClient; }
 
 private:
@@ -98,6 +102,7 @@ private:
 
 	CObjectLoader* m_pObjectLoader;		// オブジェクトローダーへのポインタ
 
+	CScene* m_pScene;					// シーンへのポインタ
 	CMyImGui* m_pImGui;					// ImGuiへのポインタ
 	CCanvas* m_pCanvas;					// キャンバスへのポインタ
 

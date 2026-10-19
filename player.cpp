@@ -31,6 +31,7 @@
 
 #include "gimmick.h"
 #include "rotationgimmick.h"
+#include "ringeffect.h"
 
 //*****************************************************************************
 // マクロ定義
@@ -305,7 +306,6 @@ void CPlayer::Update(void)
 				15.0f,
 				CBatchingEffect::TYPE::TYPE_TRAJECTORY);
 		}
-
 	}
 
 	// 移動量
@@ -323,6 +323,9 @@ void CPlayer::Update(void)
 		m_move.y = m_fRadius * 0.725f;
 		m_bJump = true;
 		pInputJoypad->SetVibration(50000, 50000, 15);
+
+		CRingEffect::Create(m_pos, INIT_D3DXVEC3, D3DXCOLOR(1.0f, 1.0f, 0.25f, 1.0f), 0.0f, 75.0f, 32, "data//TEXTURE//gradation100.jpg");
+		CRingEffect::Create(m_pos, INIT_D3DXVEC3, D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f), 0.0f, 30.0f, 32, "data//TEXTURE//gradation100.jpg");
 	}
 
 	if (m_bJump == true)
@@ -339,7 +342,12 @@ void CPlayer::Update(void)
 
 	// 当たり判定
 	CollisionField();
-	CollisionRotationGimmick();
+	if (CollisionRotationGimmick() == true)
+	{
+		m_bJump = false;
+		m_move.y = 0.0f;
+	}
+
 	//CollisionWall();
 	CollisionItem();
 
@@ -685,7 +693,7 @@ bool CPlayer::CollisionItem(void)
 
 			// 距離と長さ
 			float fDiff = powf(m_pos.x - posPlanet.x, 2) + powf(m_pos.y - posPlanet.y, 2) + powf(m_pos.z - posPlanet.z, 2);
-			fRadius = powf(fRadius, 2);						// 惑星の半径
+			fRadius = powf(fRadius, 2);						// アイテムの半径
 
 			if (fDiff <= fRadius)
 			{// 衝突していたら
@@ -742,11 +750,6 @@ bool CPlayer::CollisionRotationGimmick(void)
 			pRotGimmick = static_cast<CRotationGimmick*>(pGimmick);
 
 			isCollision = pRotGimmick->Collision(m_pos, m_fRadius);
-
-			if (isCollision == true)
-			{
-				m_bJump = false;
-			}
 
 			// 次のオブジェクトへ
 			pObject = pObjectNext;
