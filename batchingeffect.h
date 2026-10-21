@@ -32,8 +32,6 @@ public:
 	//*************************************************************************
 	enum class TYPE
 	{
-		TYPE_STAR = 0,		// 星
-		TYPE_DUST,			// 塵
 		TYPE_TRAJECTORY,	// 軌跡
 		TYPE_MAX			// 総数
 	};
@@ -69,7 +67,7 @@ private:
 	std::vector<D3DXCOLOR> m_vCol;			// 色
 	std::vector<TYPE> m_vType;				// 種類
 	std::vector<float> m_vRadius;			// 半径
-	std::vector<bool> m_visDirty;			// 変更が行われたか
+	std::vector<bool> m_visDirty;			// 変更が行われたか (使ってないです)
 	int m_nIdxTexture;						// テクスチャのインデックス
 	int m_nMax;								// 最大数
 	int m_nNum;								// エフェクト使用数

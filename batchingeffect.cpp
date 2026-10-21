@@ -256,7 +256,7 @@ void CBatchingEffect::Draw(void)
 		pVtx[2].pos = D3DXVECTOR3(-m_vRadius.at(nCntEffect), -m_vRadius.at(nCntEffect), 0.0f);
 		pVtx[3].pos = D3DXVECTOR3(m_vRadius.at(nCntEffect), -m_vRadius.at(nCntEffect), 0.0f);
 
-		//頂点座標の設定
+		// 頂点座標の設定
 		pVtx[0].pos = *D3DXVec3TransformCoord(&pVtx[0].pos, &pVtx[0].pos, &m_vMtxWorld.at(nCntEffect));
 		pVtx[1].pos = *D3DXVec3TransformCoord(&pVtx[1].pos, &pVtx[1].pos, &m_vMtxWorld.at(nCntEffect));
 		pVtx[2].pos = *D3DXVec3TransformCoord(&pVtx[2].pos, &pVtx[2].pos, &m_vMtxWorld.at(nCntEffect));

@@ -16,7 +16,7 @@ SCRIPT		# この行は消さないでね！
 # フィールド情報
 #------------------------------------------------------------------------------
 FIELDSET
-	TEXTURE_FILENAME = data//TEXTURE//field000.jpg
+	TEXTURE_FILENAME = data//TEXTURE//field001.jpg
 	POS = 0.0 0.0 0.0
 	ROT = 0.0 0.0 0.0
 	WIDTH = 250.0

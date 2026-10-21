@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/Users/student/Desktop/Project/TKG/PhysX/physx/samples/compiler/cmake/CMakeLists.txt
+  WindowsSamplePlatform.cpp
+  WindowsSampleUserInput.cpp
+  SamplePlatform.cpp
+  SampleUserInput.cpp
+  SamplePlatform.vcxproj -> C:\Users\student\Desktop\Project\TKG\PhysX\physx\bin\win.x86_32.vc142.mt\release\SamplePlatform_static_32.lib

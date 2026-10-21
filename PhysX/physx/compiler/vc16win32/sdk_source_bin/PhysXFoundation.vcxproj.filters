@@ -1,335 +1,335 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\src\PsAllocator.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\src\PsAllocator.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\src\PsAssert.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\src\PsAssert.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\src\PsFoundation.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\src\PsFoundation.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\src\PsMathUtils.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\src\PsMathUtils.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\src\PsString.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\src\PsString.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\src\PsTempAllocator.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\src\PsTempAllocator.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\src\PsUtilities.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\src\PsUtilities.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\src\windows\PsWindowsAtomic.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\src\windows\PsWindowsAtomic.cpp">
       <Filter>src\src\windows</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\src\windows\PsWindowsCpu.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\src\windows\PsWindowsCpu.cpp">
       <Filter>src\src\windows</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\src\windows\PsWindowsFPU.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\src\windows\PsWindowsFPU.cpp">
       <Filter>src\src\windows</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\src\windows\PsWindowsMutex.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\src\windows\PsWindowsMutex.cpp">
       <Filter>src\src\windows</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\src\windows\PsWindowsPrintString.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\src\windows\PsWindowsPrintString.cpp">
       <Filter>src\src\windows</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\src\windows\PsWindowsSList.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\src\windows\PsWindowsSList.cpp">
       <Filter>src\src\windows</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\src\windows\PsWindowsSocket.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\src\windows\PsWindowsSocket.cpp">
       <Filter>src\src\windows</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\src\windows\PsWindowsSync.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\src\windows\PsWindowsSync.cpp">
       <Filter>src\src\windows</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\src\windows\PsWindowsThread.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\src\windows\PsWindowsThread.cpp">
       <Filter>src\src\windows</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\src\windows\PsWindowsTime.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\src\windows\PsWindowsTime.cpp">
       <Filter>src\src\windows</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\Ps.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\Ps.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsAlignedMalloc.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsAlignedMalloc.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsAlloca.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsAlloca.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsAllocator.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsAllocator.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsAoS.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsAoS.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsArray.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsArray.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsAtomic.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsAtomic.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsBasicTemplates.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsBasicTemplates.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsBitUtils.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsBitUtils.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsBroadcast.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsBroadcast.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsCpu.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsCpu.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsFoundation.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsFoundation.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsFPU.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsFPU.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsHash.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsHash.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsHashInternals.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsHashInternals.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsHashMap.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsHashMap.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsHashSet.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsHashSet.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsInlineAllocator.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsInlineAllocator.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsInlineAoS.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsInlineAoS.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsInlineArray.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsInlineArray.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsIntrinsics.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsIntrinsics.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsMathUtils.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsMathUtils.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsMutex.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsMutex.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsPool.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsPool.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsSList.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsSList.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsSocket.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsSocket.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsSort.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsSort.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsSortInternals.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsSortInternals.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsString.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsString.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsSync.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsSync.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsTempAllocator.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsTempAllocator.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsThread.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsThread.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsTime.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsTime.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsUserAllocated.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsUserAllocated.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsUtilities.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsUtilities.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsVecMath.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsVecMath.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsVecMathAoSScalar.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsVecMathAoSScalar.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsVecMathAoSScalarInline.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsVecMathAoSScalarInline.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsVecMathSSE.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsVecMathSSE.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsVecMathUtilities.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsVecMathUtilities.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsVecQuat.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsVecQuat.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\PsVecTransform.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\PsVecTransform.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\PxFoundation.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\PxFoundation.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\foundation\PxAssert.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\foundation\PxAssert.h">
       <Filter>include\foundation</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\foundation\PxFoundationConfig.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\foundation\PxFoundationConfig.h">
       <Filter>include\foundation</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\foundation\PxMathUtils.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\foundation\PxMathUtils.h">
       <Filter>include\foundation</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\windows\PsWindowsAoS.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\windows\PsWindowsAoS.h">
       <Filter>src\include\windows</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\windows\PsWindowsFPU.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\windows\PsWindowsFPU.h">
       <Filter>src\include\windows</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\windows\PsWindowsInclude.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\windows\PsWindowsInclude.h">
       <Filter>src\include\windows</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\windows\PsWindowsInlineAoS.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\windows\PsWindowsInlineAoS.h">
       <Filter>src\include\windows</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\windows\PsWindowsIntrinsics.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\windows\PsWindowsIntrinsics.h">
       <Filter>src\include\windows</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\foundation\include\windows\PsWindowsTrigConstants.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\foundation\include\windows\PsWindowsTrigConstants.h">
       <Filter>src\include\windows</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\Px.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\Px.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxAllocatorCallback.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxAllocatorCallback.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxProfiler.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxProfiler.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxSharedAssert.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxSharedAssert.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxBitAndData.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxBitAndData.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxBounds3.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxBounds3.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxErrorCallback.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxErrorCallback.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxErrors.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxErrors.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxFlags.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxFlags.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxIntrinsics.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxIntrinsics.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxIO.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxIO.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxMat33.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxMat33.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxMat44.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxMat44.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxMath.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxMath.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxMemory.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxMemory.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxPlane.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxPlane.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxPreprocessor.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxPreprocessor.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxQuat.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxQuat.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxSimpleTypes.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxSimpleTypes.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxStrideIterator.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxStrideIterator.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxTransform.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxTransform.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxUnionCast.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxUnionCast.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxVec2.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxVec2.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxVec3.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxVec3.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\PxVec4.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\PxVec4.h">
       <Filter>shared\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\pxshared\include\foundation\windows\PxWindowsIntrinsics.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\pxshared\include\foundation\windows\PxWindowsIntrinsics.h">
       <Filter>shared\include\windows</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\compiler\cmake\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\compiler\cmake\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\compiler\resource_x86\PhysXFoundation.rc">
+    <ResourceCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\compiler\resource_x86\PhysXFoundation.rc">
       <Filter>resource</Filter>
     </ResourceCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="include">
-      <UniqueIdentifier>{B6B12155-EA56-39BA-832E-F8A7380573FD}</UniqueIdentifier>
+      <UniqueIdentifier>{94C049A1-A98B-30B2-AB89-29886A476287}</UniqueIdentifier>
     </Filter>
     <Filter Include="include\foundation">
-      <UniqueIdentifier>{780AF974-13B9-38E4-B839-8AB61BD5BBE0}</UniqueIdentifier>
+      <UniqueIdentifier>{51BC6C93-274C-38B3-9B6C-38CE5124B091}</UniqueIdentifier>
     </Filter>
     <Filter Include="resource">
-      <UniqueIdentifier>{516D9A81-9DD3-3B83-8975-DB6DEAE6D3C6}</UniqueIdentifier>
+      <UniqueIdentifier>{AA3E01F7-8544-3DEC-A288-20275EC6D4A2}</UniqueIdentifier>
     </Filter>
     <Filter Include="shared">
-      <UniqueIdentifier>{EEDFDA76-A9A1-3EE7-AB8A-57F06A5F4795}</UniqueIdentifier>
+      <UniqueIdentifier>{BC7A35A2-68D2-3F5B-9A80-C70E5BA507DD}</UniqueIdentifier>
     </Filter>
     <Filter Include="shared\include">
-      <UniqueIdentifier>{CA75627E-58C8-3CB3-B2E7-1E17D9479EDE}</UniqueIdentifier>
+      <UniqueIdentifier>{56EF88AA-2283-30D6-90CE-9DD6977C6698}</UniqueIdentifier>
     </Filter>
     <Filter Include="shared\include\windows">
-      <UniqueIdentifier>{2FDDA9EE-C42D-3914-BBB4-AE3FBBD614FC}</UniqueIdentifier>
+      <UniqueIdentifier>{D3C92D25-2D72-337F-9401-CAFA11A63255}</UniqueIdentifier>
     </Filter>
     <Filter Include="src">
-      <UniqueIdentifier>{B8CF089E-B0AA-3755-B5EA-F613723B2F6C}</UniqueIdentifier>
+      <UniqueIdentifier>{4D3207B3-F6FD-34CF-AFC0-3D1AA8C9D89D}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\include">
-      <UniqueIdentifier>{20806E22-9E5A-3A0B-926F-83348EE8F23C}</UniqueIdentifier>
+      <UniqueIdentifier>{649282D4-DC3C-3A1A-B150-059B991C513A}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\include\windows">
-      <UniqueIdentifier>{1C507CC1-4297-3AE1-8526-27728E38C01B}</UniqueIdentifier>
+      <UniqueIdentifier>{3A79A5AE-19EE-3B29-8F72-489D84CAE839}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\src">
-      <UniqueIdentifier>{9C49CCF9-FD21-330E-A5BF-59A2BD72E6F4}</UniqueIdentifier>
+      <UniqueIdentifier>{4A5CE378-F80D-3711-8AC2-F0365D4A901A}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\src\windows">
-      <UniqueIdentifier>{7E30191F-AF15-392C-9645-5F10D8E730C2}</UniqueIdentifier>
+      <UniqueIdentifier>{47CA013C-8199-3BD8-8870-97A5C4C43081}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

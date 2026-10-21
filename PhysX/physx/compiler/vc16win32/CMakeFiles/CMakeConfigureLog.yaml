@@ -35,8 +35,8 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeCCompilerId.c.in"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/CMakeModules"
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/targa"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/CMakeModules"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/targa"
       ENV{PATH}:
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -59,7 +59,7 @@ events:
         - "C:\\Users\\student\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\student\\AppData\\Local\\PowerToys\\DSCModules\\"
         - "C:\\Users\\student\\AppData\\Local\\GitHubDesktop\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX"
+      CMAKE_INSTALL_PREFIX: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX"
   -
     kind: "message-v1"
     backtrace:
@@ -78,8 +78,8 @@ events:
       .NET Framework 向け Microsoft (R) Build Engine バージョン 16.11.2+f32259642
       Copyright (C) Microsoft Corporation.All rights reserved.
       
-      2026/10/19 (月) 11:37:11 にビルドを開始しました。
-      ノード 1 上のプロジェクト "C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\4.5.0-rc1\\CompilerIdC\\CompilerIdC.vcxproj" (既定のターゲット)。
+      2026/10/20 (火) 9:25:14 にビルドを開始しました。
+      ノード 1 上のプロジェクト "C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\4.5.0-rc1\\CompilerIdC\\CompilerIdC.vcxproj" (既定のターゲット)。
       PrepareForBuild:
         ディレクトリ "Debug\\" を作成しています。
         ディレクトリ "Debug\\CompilerIdC.tlog\\" を作成しています。
@@ -90,7 +90,7 @@ events:
         CMakeCCompilerId.c
       Link:
         C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\\CMakeCCompilerId.obj
-        CompilerIdC.vcxproj -> C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\4.5.0-rc1\\CompilerIdC\\CompilerIdC.exe
+        CompilerIdC.vcxproj -> C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\4.5.0-rc1\\CompilerIdC\\CompilerIdC.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
@@ -98,13 +98,13 @@ events:
       FinalizeBuildStatus:
         ファイル "Debug\\CompilerIdC.tlog\\unsuccessfulbuild" を削除しています。
         "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate" のタッチ タスクを実行しています。
-      プロジェクト "C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\4.5.0-rc1\\CompilerIdC\\CompilerIdC.vcxproj" (既定のターゲット) のビルドが完了しました。
+      プロジェクト "C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\4.5.0-rc1\\CompilerIdC\\CompilerIdC.vcxproj" (既定のターゲット) のビルドが完了しました。
       
       ビルドに成功しました。
           0 個の警告
           0 エラー
       
-      経過時間 00:00:00.83
+      経過時間 00:00:00.50
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -112,7 +112,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
-        C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/4.5.0-rc1/CompilerIdC/CompilerIdC.exe
+        C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/4.5.0-rc1/CompilerIdC/CompilerIdC.exe
       
   -
     kind: "find-v1"
@@ -163,8 +163,8 @@ events:
     found: "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x86/link.exe"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/CMakeModules"
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/targa"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/CMakeModules"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/targa"
       ENV{PATH}:
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -187,7 +187,7 @@ events:
         - "C:\\Users\\student\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\student\\AppData\\Local\\PowerToys\\DSCModules\\"
         - "C:\\Users\\student\\AppData\\Local\\GitHubDesktop\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX"
+      CMAKE_INSTALL_PREFIX: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX"
   -
     kind: "find-v1"
     backtrace:
@@ -302,8 +302,8 @@ events:
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/CMakeModules"
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/targa"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/CMakeModules"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/targa"
       ENV{PATH}:
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -326,7 +326,7 @@ events:
         - "C:\\Users\\student\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\student\\AppData\\Local\\PowerToys\\DSCModules\\"
         - "C:\\Users\\student\\AppData\\Local\\GitHubDesktop\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX"
+      CMAKE_INSTALL_PREFIX: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX"
   -
     kind: "find-v1"
     backtrace:
@@ -374,8 +374,8 @@ events:
     found: "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x86/link.exe"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/CMakeModules"
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/targa"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/CMakeModules"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/targa"
       ENV{PATH}:
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -398,7 +398,7 @@ events:
         - "C:\\Users\\student\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\student\\AppData\\Local\\PowerToys\\DSCModules\\"
         - "C:\\Users\\student\\AppData\\Local\\GitHubDesktop\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX"
+      CMAKE_INSTALL_PREFIX: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX"
   -
     kind: "find-v1"
     backtrace:
@@ -511,8 +511,8 @@ events:
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/CMakeModules"
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/targa"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/CMakeModules"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/targa"
       ENV{PATH}:
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -535,7 +535,7 @@ events:
         - "C:\\Users\\student\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\student\\AppData\\Local\\PowerToys\\DSCModules\\"
         - "C:\\Users\\student\\AppData\\Local\\GitHubDesktop\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX"
+      CMAKE_INSTALL_PREFIX: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX"
   -
     kind: "find-v1"
     backtrace:
@@ -583,8 +583,8 @@ events:
     found: "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/Hostx64/x86/lib.exe"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/CMakeModules"
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/targa"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/CMakeModules"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/targa"
       ENV{PATH}:
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -607,7 +607,7 @@ events:
         - "C:\\Users\\student\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\student\\AppData\\Local\\PowerToys\\DSCModules\\"
         - "C:\\Users\\student\\AppData\\Local\\GitHubDesktop\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX"
+      CMAKE_INSTALL_PREFIX: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX"
   -
     kind: "find-v1"
     backtrace:
@@ -635,8 +635,8 @@ events:
     found: "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/CMakeModules"
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/targa"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/CMakeModules"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/targa"
       ENV{PATH}:
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -659,7 +659,7 @@ events:
         - "C:\\Users\\student\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\student\\AppData\\Local\\PowerToys\\DSCModules\\"
         - "C:\\Users\\student\\AppData\\Local\\GitHubDesktop\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX"
+      CMAKE_INSTALL_PREFIX: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX"
   -
     kind: "message-v1"
     backtrace:
@@ -678,8 +678,8 @@ events:
       .NET Framework 向け Microsoft (R) Build Engine バージョン 16.11.2+f32259642
       Copyright (C) Microsoft Corporation.All rights reserved.
       
-      2026/10/19 (月) 11:37:12 にビルドを開始しました。
-      ノード 1 上のプロジェクト "C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\4.5.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (既定のターゲット)。
+      2026/10/20 (火) 9:25:15 にビルドを開始しました。
+      ノード 1 上のプロジェクト "C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\4.5.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (既定のターゲット)。
       PrepareForBuild:
         ディレクトリ "Debug\\" を作成しています。
         ディレクトリ "Debug\\CompilerIdCXX.tlog\\" を作成しています。
@@ -690,7 +690,7 @@ events:
         CMakeCXXCompilerId.cpp
       Link:
         C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\4.5.0-rc1\\CompilerIdCXX\\CompilerIdCXX.exe
+        CompilerIdCXX.vcxproj -> C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\4.5.0-rc1\\CompilerIdCXX\\CompilerIdCXX.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -698,13 +698,13 @@ events:
       FinalizeBuildStatus:
         ファイル "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" を削除しています。
         "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate" のタッチ タスクを実行しています。
-      プロジェクト "C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\4.5.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (既定のターゲット) のビルドが完了しました。
+      プロジェクト "C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\4.5.0-rc1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (既定のターゲット) のビルドが完了しました。
       
       ビルドに成功しました。
           0 個の警告
           0 エラー
       
-      経過時間 00:00:00.60
+      経過時間 00:00:00.48
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -712,7 +712,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/4.5.0-rc1/CompilerIdCXX/CompilerIdCXX.exe
+        C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/4.5.0-rc1/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "find-v1"
@@ -828,8 +828,8 @@ events:
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/CMakeModules"
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/targa"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/CMakeModules"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/targa"
       ENV{PATH}:
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -852,7 +852,7 @@ events:
         - "C:\\Users\\student\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\student\\AppData\\Local\\PowerToys\\DSCModules\\"
         - "C:\\Users\\student\\AppData\\Local\\GitHubDesktop\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX"
+      CMAKE_INSTALL_PREFIX: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX"
   -
     kind: "find-v1"
     backtrace:
@@ -876,12 +876,12 @@ events:
     names:
       - "rc"
     candidate_directories:
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/bin/"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/sbin/"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/targa/bin/"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/targa/sbin/"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/targa/"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/bin/"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/sbin/"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/targa/bin/"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/targa/sbin/"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/targa/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -912,28 +912,28 @@ events:
       - "C:/Program Files/CMake/bin/"
       - "C:/Program Files/CMake/sbin/"
       - "C:/Program Files/CMake/"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX/bin/"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX/sbin/"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX/"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX/bin/"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX/sbin/"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX/"
     searched_directories:
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/bin/rc.com"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/bin/rc.exe"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/bin/rc"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/sbin/rc.com"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/sbin/rc.exe"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/sbin/rc"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/rc.com"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/rc.exe"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/rc"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/targa/bin/rc.com"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/targa/bin/rc.exe"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/targa/bin/rc"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/targa/sbin/rc.com"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/targa/sbin/rc.exe"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/targa/sbin/rc"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/targa/rc.com"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/targa/rc.exe"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/targa/rc"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/bin/rc.com"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/bin/rc.exe"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/bin/rc"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/sbin/rc.com"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/sbin/rc.exe"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/sbin/rc"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/rc.com"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/rc.exe"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/rc"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/targa/bin/rc.com"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/targa/bin/rc.exe"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/targa/bin/rc"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/targa/sbin/rc.com"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/targa/sbin/rc.exe"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/targa/sbin/rc"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/targa/rc.com"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/targa/rc.exe"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/externals/targa/rc"
       - "C:/Windows/System32/rc.com"
       - "C:/Windows/System32/rc.exe"
       - "C:/Windows/System32/rc"
@@ -1024,20 +1024,20 @@ events:
       - "C:/Program Files/CMake/rc.com"
       - "C:/Program Files/CMake/rc.exe"
       - "C:/Program Files/CMake/rc"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX/bin/rc.com"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX/bin/rc.exe"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX/bin/rc"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX/sbin/rc.com"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX/sbin/rc.exe"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX/sbin/rc"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX/rc.com"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX/rc.exe"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX/rc"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX/bin/rc.com"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX/bin/rc.exe"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX/bin/rc"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX/sbin/rc.com"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX/sbin/rc.exe"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX/sbin/rc"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX/rc.com"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX/rc.exe"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX/rc"
     found: false
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/CMakeModules"
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/targa"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/CMakeModules"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/targa"
       ENV{PATH}:
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -1060,12 +1060,12 @@ events:
         - "C:\\Users\\student\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\student\\AppData\\Local\\PowerToys\\DSCModules\\"
         - "C:\\Users\\student\\AppData\\Local\\GitHubDesktop\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX"
+      CMAKE_INSTALL_PREFIX: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX"
   -
     kind: "try_compile-v1"
     backtrace:
@@ -1075,8 +1075,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-zqgjhg"
-      binary: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-zqgjhg"
+      source: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-ejsfwj"
+      binary: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-ejsfwj"
     cmakeVariables:
       CMAKE_CXX_STDLIB_MODULES_JSON: ""
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
@@ -1086,38 +1086,38 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: 'C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-zqgjhg'
+        Change Dir: 'C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-ejsfwj'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/MSBuild.exe" cmTC_7a662.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/MSBuild.exe" cmTC_59d99.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:n
         .NET Framework 向け Microsoft (R) Build Engine バージョン 16.11.2+f32259642
         Copyright (C) Microsoft Corporation.All rights reserved.
         
-        2026/10/19 (月) 11:37:14 にビルドを開始しました。
-        ノード 1 上のプロジェクト "C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-zqgjhg\\cmTC_7a662.vcxproj" (既定のターゲット)。
+        2026/10/20 (火) 9:25:16 にビルドを開始しました。
+        ノード 1 上のプロジェクト "C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-ejsfwj\\cmTC_59d99.vcxproj" (既定のターゲット)。
         PrepareForBuild:
-          ディレクトリ "C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-zqgjhg\\Debug\\" を作成しています。
-          ディレクトリ "cmTC_7a662.dir\\Debug\\cmTC_7a662.tlog\\" を作成しています。
+          ディレクトリ "C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-ejsfwj\\Debug\\" を作成しています。
+          ディレクトリ "cmTC_59d99.dir\\Debug\\cmTC_59d99.tlog\\" を作成しています。
         InitializeBuildStatus:
-          "AlwaysCreate" が指定されたため "cmTC_7a662.dir\\Debug\\cmTC_7a662.tlog\\unsuccessfulbuild" を作成しています。
+          "AlwaysCreate" が指定されたため "cmTC_59d99.dir\\Debug\\cmTC_59d99.tlog\\unsuccessfulbuild" を作成しています。
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_7a662.dir\\Debug\\\\" /Fd"cmTC_7a662.dir\\Debug\\vc142.pdb" /external:W3 /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.5\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_59d99.dir\\Debug\\\\" /Fd"cmTC_59d99.dir\\Debug\\vc142.pdb" /external:W3 /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.5\\Modules\\CMakeCCompilerABI.c"
           Microsoft(R) C/C++ Optimizing Compiler Version 19.29.30148 for x86
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCCompilerABI.c
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_7a662.dir\\Debug\\\\" /Fd"cmTC_7a662.dir\\Debug\\vc142.pdb" /external:W3 /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.5\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /Fo"cmTC_59d99.dir\\Debug\\\\" /Fd"cmTC_59d99.dir\\Debug\\vc142.pdb" /external:W3 /TC /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.5\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe /OUT:"C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-zqgjhg\\Debug\\cmTC_7a662.exe" /INCREMENTAL /ILK:"cmTC_7a662.dir\\Debug\\cmTC_7a662.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-zqgjhg/Debug/cmTC_7a662.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-zqgjhg/Debug/cmTC_7a662.lib" /MACHINE:X86  /machine:X86 cmTC_7a662.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_7a662.vcxproj -> C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-zqgjhg\\Debug\\cmTC_7a662.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe /OUT:"C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-ejsfwj\\Debug\\cmTC_59d99.exe" /INCREMENTAL /ILK:"cmTC_59d99.dir\\Debug\\cmTC_59d99.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-ejsfwj/Debug/cmTC_59d99.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-ejsfwj/Debug/cmTC_59d99.lib" /MACHINE:X86  /machine:X86 cmTC_59d99.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_59d99.vcxproj -> C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-ejsfwj\\Debug\\cmTC_59d99.exe
         FinalizeBuildStatus:
-          ファイル "cmTC_7a662.dir\\Debug\\cmTC_7a662.tlog\\unsuccessfulbuild" を削除しています。
-          "cmTC_7a662.dir\\Debug\\cmTC_7a662.tlog\\cmTC_7a662.lastbuildstate" のタッチ タスクを実行しています。
-        プロジェクト "C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-zqgjhg\\cmTC_7a662.vcxproj" (既定のターゲット) のビルドが完了しました。
+          ファイル "cmTC_59d99.dir\\Debug\\cmTC_59d99.tlog\\unsuccessfulbuild" を削除しています。
+          "cmTC_59d99.dir\\Debug\\cmTC_59d99.tlog\\cmTC_59d99.lastbuildstate" のタッチ タスクを実行しています。
+        プロジェクト "C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-ejsfwj\\cmTC_59d99.vcxproj" (既定のターゲット) のビルドが完了しました。
         
         ビルドに成功しました。
             0 個の警告
             0 エラー
         
-        経過時間 00:00:00.51
+        経過時間 00:00:00.46
         
       exitCode: 0
   -
@@ -1130,7 +1130,7 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)(\\.exe)?"?( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        link line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe /OUT:"C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-zqgjhg\\Debug\\cmTC_7a662.exe" /INCREMENTAL /ILK:"cmTC_7a662.dir\\Debug\\cmTC_7a662.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-zqgjhg/Debug/cmTC_7a662.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-zqgjhg/Debug/cmTC_7a662.lib" /MACHINE:X86  /machine:X86 cmTC_7a662.dir\\Debug\\CMakeCCompilerABI.obj] ==> linker [C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe]
+        link line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe /OUT:"C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-ejsfwj\\Debug\\cmTC_59d99.exe" /INCREMENTAL /ILK:"cmTC_59d99.dir\\Debug\\cmTC_59d99.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-ejsfwj/Debug/cmTC_59d99.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-ejsfwj/Debug/cmTC_59d99.lib" /MACHINE:X86  /machine:X86 cmTC_59d99.dir\\Debug\\CMakeCCompilerABI.obj] ==> linker [C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe]
         linker tool for 'C': C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/HostX64/x86/link.exe 
         implicit libs: []
         implicit objs: []
@@ -1158,8 +1158,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-fowzju"
-      binary: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-fowzju"
+      source: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-gvc1th"
+      binary: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-gvc1th"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -1170,38 +1170,38 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: false
       stdout: |
-        Change Dir: 'C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-fowzju'
+        Change Dir: 'C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-gvc1th'
         
-        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/MSBuild.exe" cmTC_81822.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:n
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/MSBuild/Current/Bin/MSBuild.exe" cmTC_b56d5.vcxproj /p:Configuration=Debug /p:Platform=Win32 /p:VisualStudioVersion=16.0 /v:n
         .NET Framework 向け Microsoft (R) Build Engine バージョン 16.11.2+f32259642
         Copyright (C) Microsoft Corporation.All rights reserved.
         
-        2026/10/19 (月) 11:37:15 にビルドを開始しました。
-        ノード 1 上のプロジェクト "C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-fowzju\\cmTC_81822.vcxproj" (既定のターゲット)。
+        2026/10/20 (火) 9:25:17 にビルドを開始しました。
+        ノード 1 上のプロジェクト "C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-gvc1th\\cmTC_b56d5.vcxproj" (既定のターゲット)。
         PrepareForBuild:
-          ディレクトリ "C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-fowzju\\Debug\\" を作成しています。
-          ディレクトリ "cmTC_81822.dir\\Debug\\cmTC_81822.tlog\\" を作成しています。
+          ディレクトリ "C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-gvc1th\\Debug\\" を作成しています。
+          ディレクトリ "cmTC_b56d5.dir\\Debug\\cmTC_b56d5.tlog\\" を作成しています。
         InitializeBuildStatus:
-          "AlwaysCreate" が指定されたため "cmTC_81822.dir\\Debug\\cmTC_81822.tlog\\unsuccessfulbuild" を作成しています。
+          "AlwaysCreate" が指定されたため "cmTC_b56d5.dir\\Debug\\cmTC_b56d5.tlog\\unsuccessfulbuild" を作成しています。
         ClCompile:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_81822.dir\\Debug\\\\" /Fd"cmTC_81822.dir\\Debug\\vc142.pdb" /external:W3 /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.5\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_b56d5.dir\\Debug\\\\" /Fd"cmTC_b56d5.dir\\Debug\\vc142.pdb" /external:W3 /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.5\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft(R) C/C++ Optimizing Compiler Version 19.29.30148 for x86
           Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCXXCompilerABI.cpp
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_81822.dir\\Debug\\\\" /Fd"cmTC_81822.dir\\Debug\\vc142.pdb" /external:W3 /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.5\\Modules\\CMakeCXXCompilerABI.cpp"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /Oy- /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_b56d5.dir\\Debug\\\\" /Fd"cmTC_b56d5.dir\\Debug\\vc142.pdb" /external:W3 /TP /analyze- /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.5\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe /OUT:"C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-fowzju\\Debug\\cmTC_81822.exe" /INCREMENTAL /ILK:"cmTC_81822.dir\\Debug\\cmTC_81822.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-fowzju/Debug/cmTC_81822.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-fowzju/Debug/cmTC_81822.lib" /MACHINE:X86  /machine:X86 cmTC_81822.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_81822.vcxproj -> C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-fowzju\\Debug\\cmTC_81822.exe
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe /OUT:"C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-gvc1th\\Debug\\cmTC_b56d5.exe" /INCREMENTAL /ILK:"cmTC_b56d5.dir\\Debug\\cmTC_b56d5.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-gvc1th/Debug/cmTC_b56d5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-gvc1th/Debug/cmTC_b56d5.lib" /MACHINE:X86  /machine:X86 cmTC_b56d5.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_b56d5.vcxproj -> C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-gvc1th\\Debug\\cmTC_b56d5.exe
         FinalizeBuildStatus:
-          ファイル "cmTC_81822.dir\\Debug\\cmTC_81822.tlog\\unsuccessfulbuild" を削除しています。
-          "cmTC_81822.dir\\Debug\\cmTC_81822.tlog\\cmTC_81822.lastbuildstate" のタッチ タスクを実行しています。
-        プロジェクト "C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-fowzju\\cmTC_81822.vcxproj" (既定のターゲット) のビルドが完了しました。
+          ファイル "cmTC_b56d5.dir\\Debug\\cmTC_b56d5.tlog\\unsuccessfulbuild" を削除しています。
+          "cmTC_b56d5.dir\\Debug\\cmTC_b56d5.tlog\\cmTC_b56d5.lastbuildstate" のタッチ タスクを実行しています。
+        プロジェクト "C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-gvc1th\\cmTC_b56d5.vcxproj" (既定のターゲット) のビルドが完了しました。
         
         ビルドに成功しました。
             0 個の警告
             0 エラー
         
-        経過時間 00:00:00.50
+        経過時間 00:00:00.42
         
       exitCode: 0
   -
@@ -1214,7 +1214,7 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)(\\.exe)?"?( |$)]
         linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
-        link line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe /OUT:"C:\\Users\\student\\source\\PhysX\\PhysX-4.1\\PhysX-4.1\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-fowzju\\Debug\\cmTC_81822.exe" /INCREMENTAL /ILK:"cmTC_81822.dir\\Debug\\cmTC_81822.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-fowzju/Debug/cmTC_81822.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-fowzju/Debug/cmTC_81822.lib" /MACHINE:X86  /machine:X86 cmTC_81822.dir\\Debug\\CMakeCXXCompilerABI.obj] ==> linker [C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe]
+        link line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe /OUT:"C:\\Users\\student\\Desktop\\Project\\TKG\\PhysX\\physx\\compiler\\vc16win32\\CMakeFiles\\CMakeScratch\\TryCompile-gvc1th\\Debug\\cmTC_b56d5.exe" /INCREMENTAL /ILK:"cmTC_b56d5.dir\\Debug\\cmTC_b56d5.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-gvc1th/Debug/cmTC_b56d5.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/CMakeScratch/TryCompile-gvc1th/Debug/cmTC_b56d5.lib" /MACHINE:X86  /machine:X86 cmTC_b56d5.dir\\Debug\\CMakeCXXCompilerABI.obj] ==> linker [C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\Enterprise\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x86\\link.exe]
         linker tool for 'CXX': C:/Program Files (x86)/Microsoft Visual Studio/2019/Enterprise/VC/Tools/MSVC/14.29.30133/bin/HostX64/x86/link.exe 
         implicit libs: []
         implicit objs: []
@@ -1236,9 +1236,9 @@ events:
   -
     kind: "find_package-v1"
     backtrace:
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/samples/compiler/cmake/SampleFramework.cmake:32 (FIND_PACKAGE)"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/samples/compiler/cmake/windows/CMakeLists.txt:71 (INCLUDE)"
-      - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/samples/compiler/cmake/CMakeLists.txt:78 (INCLUDE)"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/samples/compiler/cmake/SampleFramework.cmake:32 (FIND_PACKAGE)"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/samples/compiler/cmake/windows/CMakeLists.txt:71 (INCLUDE)"
+      - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/samples/compiler/cmake/CMakeLists.txt:78 (INCLUDE)"
     name: "Targa"
     configs:
       -
@@ -1277,65 +1277,65 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/pkgRedirects/TargaConfig.cmake"
+        path: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/pkgRedirects/TargaConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/pkgRedirects/targa-config.cmake"
+        path: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/pkgRedirects/targa-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/pkgRedirects/lib/cps/Targa.cps"
+        path: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/pkgRedirects/lib/cps/Targa.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/pkgRedirects/lib/cps/targa.cps"
+        path: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/pkgRedirects/lib/cps/targa.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/pkgRedirects/share/cps/Targa.cps"
+        path: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/pkgRedirects/share/cps/Targa.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/CMakeFiles/pkgRedirects/share/cps/targa.cps"
+        path: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/CMakeFiles/pkgRedirects/share/cps/targa.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/TargaConfig.cmake"
+        path: "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/TargaConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/targa-config.cmake"
+        path: "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/targa-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/lib/cps/Targa.cps"
+        path: "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/lib/cps/Targa.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/lib/cps/targa.cps"
+        path: "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/lib/cps/targa.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/share/cps/Targa.cps"
+        path: "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/share/cps/Targa.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/CMakeModules/share/cps/targa.cps"
+        path: "C:/Users/student/Desktop/Project/TKG/PhysX/externals/CMakeModules/share/cps/targa.cps"
         mode: "cps"
         reason: "no_exist"
       -
-        path: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/targa/TargaConfig.cmake"
+        path: "C:/Users/student/Desktop/Project/TKG/PhysX/externals/targa/TargaConfig.cmake"
         mode: "config"
         reason: "no_exist"
     found:
-      path: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/externals/targa/targa-config.cmake"
+      path: "C:/Users/student/Desktop/Project/TKG/PhysX/externals/targa/targa-config.cmake"
       mode: "config"
       version: "1.0"
     search_context:
       CMAKE_PREFIX_PATH:
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/CMakeModules"
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/../externals/targa"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/CMakeModules"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/../externals/targa"
       ENV{PATH}:
         - "C:\\Windows\\system32"
         - "C:\\Windows"
@@ -1358,10 +1358,10 @@ events:
         - "C:\\Users\\student\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
         - "C:\\Users\\student\\AppData\\Local\\PowerToys\\DSCModules\\"
         - "C:\\Users\\student\\AppData\\Local\\GitHubDesktop\\bin"
-      CMAKE_INSTALL_PREFIX: "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX"
+      CMAKE_INSTALL_PREFIX: "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX"
       CMAKE_SYSTEM_PREFIX_PATH:
         - "C:/Program Files"
         - "C:/Program Files (x86)"
         - "C:/Program Files/CMake"
-        - "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX"
+        - "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX"
 ...

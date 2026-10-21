@@ -1,243 +1,243 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileEventImpl.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileEventImpl.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvd.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvd.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdDataStream.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdDataStream.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdDefaultFileTransport.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdDefaultFileTransport.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdDefaultSocketTransport.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdDefaultSocketTransport.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdImpl.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdImpl.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdMemClient.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdMemClient.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdObjectModelMetaData.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdObjectModelMetaData.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdObjectRegistrar.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdObjectRegistrar.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdProfileZoneClient.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdProfileZoneClient.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdUserRenderer.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdUserRenderer.cpp">
       <Filter>src\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\pvd\PxPvd.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\pvd\PxPvd.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\pvd\PxPvdTransport.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\pvd\PxPvdTransport.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\filebuf\include\PsAsciiConversion.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\filebuf\include\PsAsciiConversion.h">
       <Filter>filebuf\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\filebuf\include\PsAsciiConversion.inl">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\filebuf\include\PsAsciiConversion.inl">
       <Filter>filebuf\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\filebuf\include\PsFileBuffer.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\filebuf\include\PsFileBuffer.h">
       <Filter>filebuf\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\filebuf\include\PsIOStream.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\filebuf\include\PsIOStream.h">
       <Filter>filebuf\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\filebuf\include\PsIOStream.inl">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\filebuf\include\PsIOStream.inl">
       <Filter>filebuf\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\filebuf\include\PsMemoryBuffer.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\filebuf\include\PsMemoryBuffer.h">
       <Filter>filebuf\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\include\PsPvd.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\include\PsPvd.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\include\PxProfileAllocatorWrapper.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\include\PxProfileAllocatorWrapper.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\include\PxPvdClient.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\include\PxPvdClient.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\include\PxPvdDataStream.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\include\PxPvdDataStream.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\include\PxPvdDataStreamHelpers.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\include\PxPvdDataStreamHelpers.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\include\PxPvdErrorCodes.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\include\PxPvdErrorCodes.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\include\PxPvdObjectModelBaseTypes.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\include\PxPvdObjectModelBaseTypes.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\include\PxPvdRenderBuffer.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\include\PxPvdRenderBuffer.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\include\PxPvdUserRenderer.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\include\PxPvdUserRenderer.h">
       <Filter>src\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileContextProvider.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileContextProvider.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileContextProviderImpl.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileContextProviderImpl.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileDataBuffer.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileDataBuffer.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileDataParsing.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileDataParsing.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileEventBuffer.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileEventBuffer.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileEventBufferAtomic.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileEventBufferAtomic.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileEventBufferClient.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileEventBufferClient.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileEventBufferClientManager.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileEventBufferClientManager.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileEventId.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileEventId.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileEventMutex.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileEventMutex.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileEventNames.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileEventNames.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileEvents.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileEvents.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileEventSender.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileEventSender.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileEventSerialization.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileEventSerialization.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileMemory.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileMemory.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileMemoryBuffer.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileMemoryBuffer.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileMemoryEventBuffer.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileMemoryEventBuffer.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileMemoryEvents.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileMemoryEvents.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileScopedEvent.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileScopedEvent.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileScopedMutexLock.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileScopedMutexLock.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdProfileZone.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdProfileZone.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileZoneImpl.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileZoneImpl.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileZoneManager.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileZoneManager.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxProfileZoneManagerImpl.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxProfileZoneManagerImpl.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdBits.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdBits.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdByteStreams.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdByteStreams.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdCommStreamEvents.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdCommStreamEvents.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdCommStreamEventSink.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdCommStreamEventSink.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdCommStreamTypes.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdCommStreamTypes.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdDefaultFileTransport.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdDefaultFileTransport.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdDefaultSocketTransport.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdDefaultSocketTransport.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdFoundation.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdFoundation.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdImpl.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdImpl.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdInternalByteStreams.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdInternalByteStreams.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdMarshalling.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdMarshalling.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdMemClient.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdMemClient.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdObjectModelInternalTypeDefs.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdObjectModelInternalTypeDefs.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdObjectModelInternalTypes.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdObjectModelInternalTypes.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdObjectModelMetaData.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdObjectModelMetaData.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdObjectRegistrar.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdObjectRegistrar.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdProfileZoneClient.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdProfileZoneClient.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdUserRenderImpl.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdUserRenderImpl.h">
       <Filter>src\src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\pvd\src\PxPvdUserRenderTypes.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\pvd\src\PxPvdUserRenderTypes.h">
       <Filter>src\src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\compiler\cmake\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\compiler\cmake\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="filebuf">
-      <UniqueIdentifier>{C6F6C426-041B-3C0F-8568-1BF5D07836D4}</UniqueIdentifier>
+      <UniqueIdentifier>{4C047203-3C8E-3BEC-AB3C-A65ABA058253}</UniqueIdentifier>
     </Filter>
     <Filter Include="filebuf\include">
-      <UniqueIdentifier>{01CFA951-BC36-36E1-939D-A5280C7D436E}</UniqueIdentifier>
+      <UniqueIdentifier>{B6CE63A7-2F99-384F-A1DB-A7BB75D6B27D}</UniqueIdentifier>
     </Filter>
     <Filter Include="include">
-      <UniqueIdentifier>{B6B12155-EA56-39BA-832E-F8A7380573FD}</UniqueIdentifier>
+      <UniqueIdentifier>{94C049A1-A98B-30B2-AB89-29886A476287}</UniqueIdentifier>
     </Filter>
     <Filter Include="src">
-      <UniqueIdentifier>{B8CF089E-B0AA-3755-B5EA-F613723B2F6C}</UniqueIdentifier>
+      <UniqueIdentifier>{4D3207B3-F6FD-34CF-AFC0-3D1AA8C9D89D}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\include">
-      <UniqueIdentifier>{20806E22-9E5A-3A0B-926F-83348EE8F23C}</UniqueIdentifier>
+      <UniqueIdentifier>{649282D4-DC3C-3A1A-B150-059B991C513A}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\src">
-      <UniqueIdentifier>{9C49CCF9-FD21-330E-A5BF-59A2BD72E6F4}</UniqueIdentifier>
+      <UniqueIdentifier>{4A5CE378-F80D-3711-8AC2-F0365D4A901A}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -33,6 +33,8 @@
 #include "rotationgimmick.h"
 #include "ringeffect.h"
 
+#include "model_particle.h"
+
 //*****************************************************************************
 // マクロ定義
 //*****************************************************************************
@@ -322,8 +324,9 @@ void CPlayer::Update(void)
 	{// スペースキーが押されたかつジャンプ状態じゃない
 		m_move.y = m_fRadius * 0.725f;
 		m_bJump = true;
-		pInputJoypad->SetVibration(50000, 50000, 15);
+		//pInputJoypad->SetVibration(50000, 50000, 15);
 
+		//CModelParticle::Create(m_pos, CModelParticle::TYPE::TYPE_NONE);
 		CRingEffect::Create(m_pos, INIT_D3DXVEC3, D3DXCOLOR(1.0f, 1.0f, 0.25f, 1.0f), 0.0f, 75.0f, 32, "data//TEXTURE//gradation100.jpg");
 		CRingEffect::Create(m_pos, INIT_D3DXVEC3, D3DXCOLOR(1.0f, 1.0f, 1.0f, 1.0f), 0.0f, 30.0f, 32, "data//TEXTURE//gradation100.jpg");
 	}

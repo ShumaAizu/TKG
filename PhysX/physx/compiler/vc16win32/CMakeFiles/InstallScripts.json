@@ -1,10 +1,10 @@
 {
 	"InstallScripts" : 
 	[
-		"C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/cmake_install.cmake",
-		"C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/sdk_source_bin/cmake_install.cmake",
-		"C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/sdk_snippets_bin/cmake_install.cmake",
-		"C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/sdk_samples_bin/cmake_install.cmake"
+		"C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/cmake_install.cmake",
+		"C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/sdk_source_bin/cmake_install.cmake",
+		"C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/sdk_snippets_bin/cmake_install.cmake",
+		"C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/sdk_samples_bin/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

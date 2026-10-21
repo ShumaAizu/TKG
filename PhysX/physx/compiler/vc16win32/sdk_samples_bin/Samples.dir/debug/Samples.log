@@ -1,2 +1,39 @@
-﻿     ライブラリ C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/bin/win.x86_32.vc142.mt/debug/Samples_32.lib とオブジェクト C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/bin/win.x86_32.vc142.mt/debug/Samples_32.exp を作成中
-  Samples.vcxproj -> C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\bin\win.x86_32.vc142.mt\debug\Samples_32.exe
+﻿  Building Custom Rule C:/Users/student/Desktop/Project/TKG/PhysX/physx/samples/compiler/cmake/CMakeLists.txt
+  SampleBridges.cpp
+  SampleBridgesCCT.cpp
+  Planet.cpp
+  SampleCustomGravity.cpp
+  SampleCustomGravity_CCT.cpp
+  SampleCustomGravityBuilder.cpp
+  SampleCustomGravityCameraController.cpp
+  SampleCustomGravityFilterShader.cpp
+  SampleHelloWorld.cpp
+  ChunkLoader.cpp
+  MeshBuilder.cpp
+  SampleLargeWorld.cpp
+  SampleLargeWorldCCT.cpp
+  SampleNorthPole.cpp
+  SampleNorthPoleBuilder.cpp
+  SampleNorthPoleCameraController.cpp
+  SampleNorthPoleCCT.cpp
+  SampleNorthPoleDynamics.cpp
+  SampleNorthPoleFilterShader.cpp
+  Crab.cpp
+  SampleSubmarine.cpp
+  SampleVehicle.cpp
+  SampleVehicleDebugRender.cpp
+  SampleVehicleTerrain.cpp
+  SampleVehicle_CameraController.cpp
+  SampleVehicle_ControlInputs.cpp
+  SampleVehicle_GameLogic.cpp
+  SampleVehicle_SceneQuery.cpp
+  SampleVehicle_VehicleController.cpp
+  SampleVehicle_VehicleCooking.cpp
+  SampleVehicle_VehicleManager.cpp
+  SampleVehicle_WheelQueryResults.cpp
+  KinematicPlatform.cpp
+  SampleCCTActor.cpp
+  SampleCCTCameraController.cpp
+  SampleCCTJump.cpp
+     ライブラリ C:/Users/student/Desktop/Project/TKG/PhysX/physx/bin/win.x86_32.vc142.mt/debug/Samples_32.lib とオブジェクト C:/Users/student/Desktop/Project/TKG/PhysX/physx/bin/win.x86_32.vc142.mt/debug/Samples_32.exp を作成中
+  Samples.vcxproj -> C:\Users\student\Desktop\Project\TKG\PhysX\physx\bin\win.x86_32.vc142.mt\debug\Samples_32.exe

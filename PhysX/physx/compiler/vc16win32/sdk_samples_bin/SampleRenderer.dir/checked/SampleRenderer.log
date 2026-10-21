@@ -1,4 +1,4 @@
-﻿  Building Custom Rule C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/samples/compiler/cmake/CMakeLists.txt
+﻿  Building Custom Rule C:/Users/student/Desktop/Project/TKG/PhysX/physx/samples/compiler/cmake/CMakeLists.txt
   NULLRenderer.cpp
   NULLRendererDirectionalLight.cpp
   NULLRendererIndexBuffer.cpp
@@ -76,4 +76,4 @@
   RendererVertexBuffer.cpp
   RendererVertexBufferDesc.cpp
   RendererWindow.cpp
-  SampleRenderer.vcxproj -> C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\bin\win.x86_32.vc142.mt\checked\SampleRenderer_static_32.lib
+  SampleRenderer.vcxproj -> C:\Users\student\Desktop\Project\TKG\PhysX\physx\bin\win.x86_32.vc142.mt\checked\SampleRenderer_static_32.lib

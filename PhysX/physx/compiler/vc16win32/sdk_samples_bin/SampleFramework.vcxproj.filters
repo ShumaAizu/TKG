@@ -1,126 +1,126 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\src\windows\WindowsSampleAssetManager.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\src\windows\WindowsSampleAssetManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\src\nv_dds.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\src\nv_dds.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\src\ODBlock.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\src\ODBlock.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\src\SampleApplication.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\src\SampleApplication.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\src\SampleAsset.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\src\SampleAsset.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\src\SampleAssetManager.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\src\SampleAssetManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\src\SampleCommandLine.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\src\SampleCommandLine.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\src\SampleDirManager.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\src\SampleDirManager.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\src\SampleInputAsset.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\src\SampleInputAsset.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\src\SampleLineDebugRender.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\src\SampleLineDebugRender.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\src\SampleMaterialAsset.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\src\SampleMaterialAsset.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\src\SamplePointDebugRender.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\src\SamplePointDebugRender.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\src\SampleTextureAsset.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\src\SampleTextureAsset.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\src\SampleTree.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\src\SampleTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\src\SampleTriangleDebugRender.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\src\SampleTriangleDebugRender.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\externals\targa\src\targa.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\externals\targa\src\targa.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\src\nv_dds.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\src\nv_dds.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\FrameworkFoundation.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\FrameworkFoundation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\ODBlock.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\ODBlock.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\SampleActor.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\SampleActor.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\SampleApplication.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\SampleApplication.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\SampleArray.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\SampleArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\SampleAsset.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\SampleAsset.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\SampleAssetManager.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\SampleAssetManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\SampleCommandLine.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\SampleCommandLine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\SampleDirManager.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\SampleDirManager.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\SampleFilesystem.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\SampleFilesystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\SampleFrameworkInputEventIds.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\SampleFrameworkInputEventIds.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\SampleInputAsset.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\SampleInputAsset.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\SampleLineDebugRender.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\SampleLineDebugRender.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\SampleMaterialAsset.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\SampleMaterialAsset.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\SamplePointDebugRender.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\SamplePointDebugRender.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\SampleTextureAsset.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\SampleTextureAsset.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\SampleTree.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\SampleTree.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\SampleTriangleDebugRender.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\SampleTriangleDebugRender.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\sampleframework\framework\include\SampleXml.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\sampleframework\framework\include\SampleXml.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\samples\compiler\cmake\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\samples\compiler\cmake\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{3E126AD7-F556-3AF5-94B3-D466C8180FF9}</UniqueIdentifier>
+      <UniqueIdentifier>{5141C209-03A6-3898-A140-C55E232DD57D}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{307E5BB4-F911-3F55-9BB8-22950589DABF}</UniqueIdentifier>
+      <UniqueIdentifier>{D7BD34E4-43C2-3C0C-A9F4-4F70856F2A9E}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

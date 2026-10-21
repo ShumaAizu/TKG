@@ -31,6 +31,8 @@
 #include "gimmick.h"
 #include "rotationgimmick.h"
 
+#include "ball.h"
+
 #include <vector>
 #include <string>
 
@@ -49,6 +51,7 @@
 CGame::CGame(int nPriority) : CScene(MODE::MODE_GAME, nPriority)
 {
 	// メンバ変数クリア
+	m_pRotationGimmick = nullptr;
 	m_pPlayer = nullptr;
 	m_pObjectLoader = nullptr;
 	m_pTutorial = nullptr;
@@ -88,9 +91,16 @@ HRESULT CGame::Init(void)
 
 	//CGimmick::Create(INIT_D3DXVEC3, INIT_D3DXVEC3, "data//MODEL//building000.x");
 
-	CRotationGimmick::Create(D3DXVECTOR3(0.0f, -50.0f, 150.0f), D3DXVECTOR3(0.0f, 0.0f, D3DX_PI * 0.25f), 75.0f, 250.0f, 75.0f, "data//MODEL//TestBox000.x");
+	m_pRotationGimmick = CRotationGimmick::Create(D3DXVECTOR3(0.0f, -50.0f, 0.0f), D3DXVECTOR3(0.0f, 0.0f, D3DX_PI * 0.5f), 75.0f, 250.0f, 75.0f, "data//MODEL//TestBox000.x");
+
+	//CRotationGimmick::Create(D3DXVECTOR3(0.0f, -50.0f, -0.0f), D3DXVECTOR3(0.0f, D3DX_PI * 0.5f, 0.0f), 75.0f, 250.0f, 75.0f, "data//MODEL//TestBox000.x");
 
 	CGimmick::Create(D3DXVECTOR3(0.0f, 0.0f, -150.0f), INIT_D3DXVEC3, "data//MODEL//button000.x");
+
+	for (int nCnt = 0; nCnt < 150; nCnt++)
+	{
+		CBall::Create(D3DXVECTOR3(150.0f, 250.0f, 0.0f), 10.0f, 10.0f, 10.0f);
+	}
 
 	CManager* pManager = CManager::GetInstance();
 	m_pObjectLoader->Load("data//SCRIPTS//Test000.txt");
@@ -136,6 +146,8 @@ void CGame::Update(void)
 	{// バックスペースでリセット
 		pManager->SetMode(MODE_GAME);
 	}
+
+	m_pRotationGimmick->Move();
 
 	if (pInputKeyboard->GetRepeat(DIK_F1) == true)
 	{

@@ -23,6 +23,7 @@ class CPlayer;				// プレイヤークラス
 class CObjectLoader;		// オブジェクトローダークラス
 class CUI;					// UIクラス
 class CScore;				// スコアクラス
+class CRotationGimmick;		// 回転ギミッククラス
 
 //*****************************************************************************
 // マクロ定義
@@ -47,12 +48,13 @@ public:
 	CScore* GetScore(void) const { return m_pScore; }
 
 private:
-	CPlayer* m_pPlayer;					// プレイヤーへのポインタ
-	CObjectLoader* m_pObjectLoader;		// オブジェクトローダーへのポインタ
-	CUI* m_pTutorial;					// チュートリアルUIへのポインタ
-	CScore* m_pScore;					// スコアへのポインタ
-	int m_nCntTutorial;					// チュートリアルUIの消失カウント
-	bool m_isPause;						// ポーズ状態
+	CRotationGimmick* m_pRotationGimmick;		// 回転ギミックへのポインタ
+	CPlayer* m_pPlayer;							// プレイヤーへのポインタ
+	CObjectLoader* m_pObjectLoader;				// オブジェクトローダーへのポインタ
+	CUI* m_pTutorial;							// チュートリアルUIへのポインタ
+	CScore* m_pScore;							// スコアへのポインタ
+	int m_nCntTutorial;							// チュートリアルUIの消失カウント
+	bool m_isPause;								// ポーズ状態
 };
 
 #endif	// !_GAME_H_

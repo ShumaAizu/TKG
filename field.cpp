@@ -123,6 +123,11 @@ float CField::GetHeight(const D3DXVECTOR3 pos, const D3DXVECTOR3 posOld)
 	D3DXVECTOR3 vtx0, vtx1, vtx2, vtx3;
 	float fHeight = 0.0f;
 
+	if (m_pVtxBuff == nullptr)
+	{
+		return 0.0f;
+	}
+
 	VERTEX_3D* pVtx;			// 頂点情報へのポインタ
 
 	// 頂点バッファをロックし,頂点情報へのポインタを取得

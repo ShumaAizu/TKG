@@ -33,12 +33,17 @@ public:
 	void Update(void) override;
 	void Draw(void) override;
 
+	void Move(void);
+
 	bool Collision(D3DXVECTOR3& pos, float fRadius);
 
 private:
-	float m_fWidth;			// 幅
-	float m_fHeight;		// 高さ
-	float m_fDepth;			// 奥行き
+	physx::PxRigidDynamic* m_pRigid_Dynamic;	// 動的剛体
+	physx::PxShape* m_pBox_Shape;				// 形状 (四角)
+
+	float m_fWidth;								// 幅
+	float m_fHeight;							// 高さ
+	float m_fDepth;								// 奥行き
 };
 
 #endif	// !_ROTATIONGIMMICK_H_

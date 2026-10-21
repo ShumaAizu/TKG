@@ -50,6 +50,9 @@ CRotationGimmick* CRotationGimmick::Create(const D3DXVECTOR3 pos,
 CRotationGimmick::CRotationGimmick(int nPriority) : CGimmick(nPriority)
 {
 	// メンバ変数クリア
+	m_pRigid_Dynamic = nullptr;
+	m_pBox_Shape = nullptr;
+
 	m_fWidth = 0.0f;
 	m_fHeight = 0.0f;
 	m_fDepth = 0.0f;
@@ -81,10 +84,42 @@ HRESULT CRotationGimmick::Init(const D3DXVECTOR3 pos,
 	const float fDepth,
 	const char* pModelFile)
 {
+	// マネージャーの取得
+	CManager* pManager = CManager::GetInstance();
+
+	// 物理エンジン取得
+	physx::PxPhysics* pPhysics = pManager->GetPhysics();
+	physx::PxScene* pPxScene = pManager->GetPxScene();
+
 	// 各種値初期化
 	m_fWidth = fWidth;
 	m_fHeight = fHeight;
 	m_fDepth = fDepth;
+
+	m_pRigid_Dynamic = pPhysics->createRigidDynamic(physx::PxTransform(physx::PxIdentity));
+	m_pBox_Shape = pPhysics->createShape(physx::PxBoxGeometry(fWidth, fHeight, fDepth),
+		*pPhysics->createMaterial(0.5f, 0.5f, 0.5f));
+
+	// 形状を紐づけ
+	m_pBox_Shape->setLocalPose(physx::PxTransform(physx::PxIdentity));
+	m_pRigid_Dynamic->attachShape(*m_pBox_Shape);
+
+	physx::PxVec3 Position = physx::PxVec3(pos.x, pos.y, pos.z);
+
+	D3DXQUATERNION quat;
+	D3DXQuaternionIdentity(&quat);
+
+	physx::PxQuat Quat = physx::PxQuat(quat.x, quat.y, quat.z, quat.w);
+	physx::PxTransform pose = physx::PxTransform(Position, Quat);
+
+	// キネマティック化
+	m_pRigid_Dynamic->setRigidBodyFlag(physx::PxRigidBodyFlag::eKINEMATIC, true);
+	m_pRigid_Dynamic->setKinematicTarget(pose);
+
+	m_pRigid_Dynamic->setGlobalPose(pose);
+
+	// 剛体を空間に追加
+	pPxScene->addActor(*m_pRigid_Dynamic);
 
 	m_type = TYPE_ROTATION;
 
@@ -98,6 +133,10 @@ HRESULT CRotationGimmick::Init(const D3DXVECTOR3 pos,
 //=============================================================================
 void CRotationGimmick::Uninit(void)
 {
+	// 剛体の終了処理
+	m_pBox_Shape->release();
+	m_pRigid_Dynamic->release();
+
 	// 親クラスの終了処理
 	CGimmick::Uninit();
 }
@@ -107,20 +146,6 @@ void CRotationGimmick::Uninit(void)
 //=============================================================================
 void CRotationGimmick::Update(void)
 {
-	// デバイス取得
-	CManager* pManager = CManager::GetInstance();
-	CInputKeyboard* pInputKeyboard = pManager->GetInputKeyboard();
-
-	D3DXVECTOR3 rot = GetRotation();
-
-	if (pInputKeyboard->GetPress(DIK_F3) == true || true)
-	{
-		rot.z += 0.01f;
-		rot.z = NumCirculation(rot.z, -D3DX_PI, D3DX_PI);
-	}
-
-	SetRotation(rot);
-
 	// 親クラスの更新処理
 	CGimmick::Update();
 }
@@ -132,6 +157,49 @@ void CRotationGimmick::Draw(void)
 {
 	// 親クラスの描画処理
 	CGimmick::Draw();
+}
+
+//=============================================================================
+// 移動
+//=============================================================================
+void CRotationGimmick::Move(void)
+{
+	// デバイス取得
+	CManager* pManager = CManager::GetInstance();
+	CInputKeyboard* pInputKeyboard = pManager->GetInputKeyboard();
+
+	D3DXVECTOR3 pos = GetPosition();
+	D3DXVECTOR3 rot = GetRotation();
+
+	//rot.z += -0.01f;
+
+	if (pInputKeyboard->GetPress(DIK_F3) == true)
+	{
+		//pos.x += 10.0f;
+		rot.z += -0.01f;
+	}
+
+	if (pInputKeyboard->GetPress(DIK_F2) == true)
+	{
+		//pos.x += -10.0f;
+		rot.z += 0.01f;
+	}
+
+	rot.z = NumCirculation(rot.z, -D3DX_PI, D3DX_PI);
+
+	D3DXQUATERNION quat;
+
+	D3DXQuaternionRotationYawPitchRoll(&quat, rot.y, rot.x, rot.z);
+
+	physx::PxVec3 Position = physx::PxVec3(pos.x, pos.y, pos.z);
+	physx::PxQuat Quat = physx::PxQuat(quat.x, quat.y, quat.z, quat.w);
+	physx::PxTransform pose = physx::PxTransform(Position, Quat);
+
+	m_pRigid_Dynamic->setKinematicTarget(pose);
+	m_pRigid_Dynamic->setGlobalPose(pose);
+
+	SetPosition(pos);
+	SetRotation(rot);
 }
 
 bool CRotationGimmick::Collision(D3DXVECTOR3& pos, float fRadius)

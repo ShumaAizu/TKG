@@ -1,4 +1,4 @@
-﻿  Building Custom Rule C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/samples/compiler/cmake/CMakeLists.txt
+﻿  Building Custom Rule C:/Users/student/Desktop/Project/TKG/PhysX/physx/samples/compiler/cmake/CMakeLists.txt
   SampleBridges.cpp
   SampleBridgesCCT.cpp
   Planet.cpp
@@ -35,5 +35,5 @@
   SampleCCTActor.cpp
   SampleCCTCameraController.cpp
   SampleCCTJump.cpp
-     ライブラリ C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/bin/win.x86_32.vc142.mt/checked/Samples_32.lib とオブジェクト C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/bin/win.x86_32.vc142.mt/checked/Samples_32.exp を作成中
-  Samples.vcxproj -> C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\bin\win.x86_32.vc142.mt\checked\Samples_32.exe
+     ライブラリ C:/Users/student/Desktop/Project/TKG/PhysX/physx/bin/win.x86_32.vc142.mt/checked/Samples_32.lib とオブジェクト C:/Users/student/Desktop/Project/TKG/PhysX/physx/bin/win.x86_32.vc142.mt/checked/Samples_32.exp を作成中
+  Samples.vcxproj -> C:\Users\student\Desktop\Project\TKG\PhysX\physx\bin\win.x86_32.vc142.mt\checked\Samples_32.exe

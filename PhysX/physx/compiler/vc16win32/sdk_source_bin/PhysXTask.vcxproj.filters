@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\task\src\TaskManager.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\task\src\TaskManager.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\task\PxCpuDispatcher.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\task\PxCpuDispatcher.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\task\PxTask.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\task\PxTask.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\task\PxTaskDefine.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\task\PxTaskDefine.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\task\PxTaskManager.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\task\PxTaskManager.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\compiler\cmake\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\compiler\cmake\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="include">
-      <UniqueIdentifier>{B6B12155-EA56-39BA-832E-F8A7380573FD}</UniqueIdentifier>
+      <UniqueIdentifier>{94C049A1-A98B-30B2-AB89-29886A476287}</UniqueIdentifier>
     </Filter>
     <Filter Include="src">
-      <UniqueIdentifier>{B8CF089E-B0AA-3755-B5EA-F613723B2F6C}</UniqueIdentifier>
+      <UniqueIdentifier>{4D3207B3-F6FD-34CF-AFC0-3D1AA8C9D89D}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

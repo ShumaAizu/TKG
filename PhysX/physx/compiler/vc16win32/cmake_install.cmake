@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/public
+# Install script for directory: C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/public
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -34,16 +34,16 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/sdk_source_bin/cmake_install.cmake")
-  include("C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/sdk_snippets_bin/cmake_install.cmake")
-  include("C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/sdk_samples_bin/cmake_install.cmake")
+  include("C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/sdk_source_bin/cmake_install.cmake")
+  include("C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/sdk_snippets_bin/cmake_install.cmake")
+  include("C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/sdk_samples_bin/cmake_install.cmake")
 
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/install_local_manifest.txt"
+  file(WRITE "C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -59,6 +59,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -1,0 +1,24 @@
+﻿  Building Custom Rule C:/Users/student/Desktop/Project/TKG/PhysX/physx/source/compiler/cmake/CMakeLists.txt
+  Adjacencies.cpp
+  Cooking.cpp
+  CookingUtils.cpp
+  EdgeList.cpp
+  MeshCleaner.cpp
+  Quantizer.cpp
+  BVHStructureBuilder.cpp
+  HeightFieldCooking.cpp
+  RTreeCooking.cpp
+  MeshBuilder.cpp
+  TriangleMeshBuilder.cpp
+  GrbTriangleMeshCooking.cpp
+  BigConvexDataBuilder.cpp
+  ConvexHullBuilder.cpp
+  ConvexHullLib.cpp
+  ConvexHullUtils.cpp
+  ConvexMeshBuilder.cpp
+  ConvexPolygonsBuilder.cpp
+  QuickHullConvexHullLib.cpp
+  VolumeIntegration.cpp
+  WindowsCookingDelayLoadHook.cpp
+     ライブラリ C:/Users/student/Desktop/Project/TKG/PhysX/physx/bin/win.x86_32.vc142.mt/release/PhysXCooking_32.lib とオブジェクト C:/Users/student/Desktop/Project/TKG/PhysX/physx/bin/win.x86_32.vc142.mt/release/PhysXCooking_32.exp を作成中
+  PhysXCooking.vcxproj -> C:\Users\student\Desktop\Project\TKG\PhysX\physx\bin\win.x86_32.vc142.mt\release\PhysXCooking_32.dll

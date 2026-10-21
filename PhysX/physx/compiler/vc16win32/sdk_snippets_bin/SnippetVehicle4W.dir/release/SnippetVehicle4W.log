@@ -1,0 +1,12 @@
+﻿  Building Custom Rule C:/Users/student/Desktop/Project/TKG/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt
+  ClassicMain.cpp
+  SnippetVehicle4W.cpp
+  SnippetVehicle4WRender.cpp
+  SnippetVehicle4WCreate.cpp
+  SnippetVehicleCreate.cpp
+  SnippetVehicleFilterShader.cpp
+  SnippetVehicleNoDriveCreate.cpp
+  SnippetVehicleSceneQuery.cpp
+  SnippetVehicleTankCreate.cpp
+  SnippetVehicleTireFriction.cpp
+  SnippetVehicle4W.vcxproj -> C:\Users\student\Desktop\Project\TKG\PhysX\physx\bin\win.x86_32.vc142.mt\release\SnippetVehicle4W_32.exe

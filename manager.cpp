@@ -39,6 +39,7 @@
 #include "protocol_ranking.h"
 
 #include "meshring.h"
+#include "model_particle.h"
 
 //*****************************************************************************
 // マクロ定義
@@ -78,6 +79,14 @@ CManager::CManager()
 	m_pPause = nullptr;
 
 	m_pTcpClient = nullptr;
+
+	m_defaultAllocator;
+	m_defaultErrorCallback;
+	m_pFoundation = nullptr;
+	m_pPhysics = nullptr;
+	m_pDispatcher = nullptr;
+	m_pPxScene = nullptr;
+	m_pPvd = nullptr;
 }
 
 //=============================================================================
@@ -93,7 +102,7 @@ CManager::~CManager()
 //=============================================================================
 HRESULT CManager::Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow)
 {
-#ifndef _DEBUG
+#ifdef _DEBUG
 	// マウスカーソルを非表示
 	ShowCursor(false);
 #endif
@@ -122,6 +131,53 @@ HRESULT CManager::Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow)
 	if (FAILED(m_pRenderer->Init(hWnd, bWindow)))
 	{// 失敗した場合
 		return -1;
+	}
+
+	// Foundationのインスタンス化
+	if (m_pFoundation = PxCreateFoundation(PX_PHYSICS_VERSION, m_defaultAllocator, m_defaultErrorCallback); !m_pFoundation)
+	{
+		return false;
+	}
+
+	// PVDと接続する設定
+	if (m_pPvd = physx::PxCreatePvd(*m_pFoundation); m_pPvd)
+	{
+		// PVD側のデフォルトポートは5425
+		physx::PxPvdTransport* transport = physx::PxDefaultPvdSocketTransportCreate("127.0.0.1", 5425, 10);
+		m_pPvd->connect(*transport, physx::PxPvdInstrumentationFlag::eALL);
+	}
+
+	// Physicsのインスタンス化
+	if (m_pPhysics = PxCreatePhysics(PX_PHYSICS_VERSION, *m_pFoundation, physx::PxTolerancesScale(), true, m_pPvd); !m_pPhysics)
+	{
+		return false;
+	}
+
+	// 拡張機能用
+	if (!PxInitExtensions(*m_pPhysics, m_pPvd))
+	{
+		return false;
+	}
+
+	// 処理に使うスレッドを指定する
+	m_pDispatcher = physx::PxDefaultCpuDispatcherCreate(8);
+
+	// 空間の設定
+	physx::PxSceneDesc scene_desc(m_pPhysics->getTolerancesScale());
+	scene_desc.gravity = physx::PxVec3(0, -9, 0);
+	scene_desc.filterShader = physx::PxDefaultSimulationFilterShader;
+	scene_desc.cpuDispatcher = m_pDispatcher;
+
+	// 空間のインスタンス化
+	m_pPxScene = m_pPhysics->createScene(scene_desc);
+
+	// PVDの表示設定
+	physx::PxPvdSceneClient* pvd_client;
+	if (pvd_client = m_pPxScene->getScenePvdClient(); pvd_client)
+	{
+		pvd_client->setScenePvdFlag(physx::PxPvdSceneFlag::eTRANSMIT_CONSTRAINTS, true);
+		pvd_client->setScenePvdFlag(physx::PxPvdSceneFlag::eTRANSMIT_CONTACTS, true);
+		pvd_client->setScenePvdFlag(physx::PxPvdSceneFlag::eTRANSMIT_SCENEQUERIES, true);
 	}
 
 	// キーボードのインスタンスを生成
@@ -310,6 +366,116 @@ HRESULT CManager::Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow)
 		return -1;
 	}
 
+	D3DXVECTOR3 nor = D3DXVECTOR3(0.5f, 1.0f, 0.0f);
+	D3DXVec3Normalize(&nor, &nor);
+
+	//// 平面を追加
+	//m_pPxScene->addActor(*physx::PxCreatePlane(
+	//	*m_pPhysics, physx::PxPlane(nor.x, nor.y, nor.z, 0),
+	//	*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f))
+	//);
+
+	//nor = D3DXVECTOR3(-0.5f, 1.0f, 0.0f);
+	//D3DXVec3Normalize(&nor, &nor);
+
+	//// 平面を追加
+	//m_pPxScene->addActor(*physx::PxCreatePlane(
+	//	*m_pPhysics, physx::PxPlane(nor.x, nor.y, nor.z, 0),
+	//	*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f))
+	//);
+
+	//nor = D3DXVECTOR3(0.0f, 1.0f, 0.5f);
+	//D3DXVec3Normalize(&nor, &nor);
+
+	//// 平面を追加
+	//m_pPxScene->addActor(*physx::PxCreatePlane(
+	//	*m_pPhysics, physx::PxPlane(nor.x, nor.y, nor.z, 0),
+	//	*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f))
+	//);
+
+	//nor = D3DXVECTOR3(0.0f, 1.0f, -0.5f);
+	//D3DXVec3Normalize(&nor, &nor);
+
+	//// 平面を追加
+	//m_pPxScene->addActor(*physx::PxCreatePlane(
+	//	*m_pPhysics, physx::PxPlane(nor.x, nor.y, nor.z, 0),
+	//	*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f))
+	//);
+
+	nor = D3DXVECTOR3(1.0f, 0.0f, 0.0f);
+	D3DXVec3Normalize(&nor, &nor);
+
+	// 平面を追加
+	m_pPxScene->addActor(*physx::PxCreatePlane(
+		*m_pPhysics, physx::PxPlane(nor.x, nor.y, nor.z, 250),
+		*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f))
+	);
+
+	nor = D3DXVECTOR3(-1.0f, 0.0f, 0.0f);
+	D3DXVec3Normalize(&nor, &nor);
+
+	// 平面を追加
+	m_pPxScene->addActor(*physx::PxCreatePlane(
+		*m_pPhysics, physx::PxPlane(nor.x, nor.y, nor.z, 250),
+		*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f))
+	);
+
+	nor = D3DXVECTOR3(0.0f, 0.0f, 1.0f);
+	D3DXVec3Normalize(&nor, &nor);
+
+	// 平面を追加
+	m_pPxScene->addActor(*physx::PxCreatePlane(
+		*m_pPhysics, physx::PxPlane(nor.x, nor.y, nor.z, 250),
+		*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f))
+	);
+
+	nor = D3DXVECTOR3(0.0f, 0.0f, -1.0f);
+	D3DXVec3Normalize(&nor, &nor);
+
+	// 平面を追加
+	m_pPxScene->addActor(*physx::PxCreatePlane(
+		*m_pPhysics, physx::PxPlane(nor.x, nor.y, nor.z, 250),
+		*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f))
+	);
+
+	// 絶対に動くことのない(静的)剛体を作成
+	physx::PxRigidDynamic* rigid_static
+		= m_pPhysics->createRigidDynamic(physx::PxTransform(physx::PxIdentity));
+	// 形状(Box)を作成
+	physx::PxShape* box_shape
+		= m_pPhysics->createShape(
+			// Boxの大きさ
+			physx::PxBoxGeometry(250.0f, 10.0f, 250.0f),
+			// 摩擦係数と反発係数の設定
+			*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f)
+		);
+	// 形状のローカル座標を設定
+	box_shape->setLocalPose(physx::PxTransform(physx::PxIdentity));
+	// 形状を紐づけ
+	rigid_static->attachShape(*box_shape);
+	rigid_static->setRigidBodyFlag(physx::PxRigidBodyFlag::eKINEMATIC, true);
+	// 剛体を空間に追加
+	m_pPxScene->addActor(*rigid_static);
+
+	//// 動かすことのできる(動的)剛体を作成
+	//physx::PxRigidDynamic* rigid_dynamic
+	//	= m_pPhysics->createRigidDynamic(physx::PxTransform(physx::PxIdentity));
+	//// 形状(Sphere)を作成
+	//physx::PxShape* sphere_shape
+	//	= m_pPhysics->createShape(
+	//		// Sphereの大きさ
+	//		physx::PxSphereGeometry(1.0f),
+	//		// 摩擦係数と反発係数の設定
+	//		*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f)
+	//	);
+	//// 形状を紐づけ
+	//sphere_shape->setLocalPose(physx::PxTransform(0.0f, 50.0f, 0.0f));
+	//rigid_dynamic->attachShape(*sphere_shape);
+
+	//// 剛体を空間に追加
+	//m_pPxScene->addActor(*rigid_dynamic);
+
+	//rigid_dynamic->addForce(physx::PxVec3(0, 10, 0), physx::PxForceMode::eIMPULSE);
 
 	// デバッグ表示の初期化
 	CDebugProc::Init();
@@ -331,6 +497,19 @@ void CManager::Uninit(void)
 
 	// サウンドストップ
 	m_pSound->Stop();
+
+	PxCloseExtensions();
+	m_pPxScene->release();
+	m_pDispatcher->release();
+	m_pPhysics->release();
+	if (m_pPvd)
+	{
+		m_pPvd->disconnect();
+		physx::PxPvdTransport* transport = m_pPvd->getTransport();
+		m_pPvd->release();
+		transport->release();
+	}
+	m_pFoundation->release();
 
 	if (m_pTcpClient != nullptr)
 	{// クライアントを生成していたなら
@@ -497,6 +676,26 @@ void CManager::Update(void)
 	{
 		m_pRenderer->Update();
 	}
+
+	if (m_pInputKeyboard->GetTrigger(DIK_F5) == true)
+	{
+		CModelParticle::Create(D3DXVECTOR3(0.0f, 150.0f, 0.0f), CModelParticle::TYPE::TYPE_SNOWFLAKE);
+	}
+
+	if (m_pInputKeyboard->GetTrigger(DIK_F6) == true)
+	{
+		CModelParticle::Create(D3DXVECTOR3(0.0f, 150.0f, 0.0f), CModelParticle::TYPE::TYPE_STAR);
+	}
+
+	if (m_pInputKeyboard->GetTrigger(DIK_F7) == true)
+	{
+		CModelParticle::Create(D3DXVECTOR3(0.0f, 150.0f, 0.0f), CModelParticle::TYPE::TYPE_EARTH);
+	}
+
+	// シミュレーション速度を指定する
+	m_pPxScene->simulate(1.0f / 10.0f);
+	// PhysXの処理が終わるまで待つ
+	m_pPxScene->fetchResults(true);
 
 	// ランキング機能の仮置き
 	RankingTest();

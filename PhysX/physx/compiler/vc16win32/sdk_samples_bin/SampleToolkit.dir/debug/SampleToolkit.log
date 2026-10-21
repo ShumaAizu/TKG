@@ -1,7 +1,7 @@
-﻿  Building Custom Rule C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/samples/compiler/cmake/CMakeLists.txt
+﻿  Building Custom Rule C:/Users/student/Desktop/Project/TKG/PhysX/physx/samples/compiler/cmake/CMakeLists.txt
   PxTkBmpLoader.cpp
   PxTkFPS.cpp
   PxTkMatrixUtils.cpp
   PxTkRandom.cpp
   PxTkStream.cpp
-  SampleToolkit.vcxproj -> C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\bin\win.x86_32.vc142.mt\debug\SamplesToolkit_static_32.lib
+  SampleToolkit.vcxproj -> C:\Users\student\Desktop\Project\TKG\PhysX\physx\bin\win.x86_32.vc142.mt\debug\SamplesToolkit_static_32.lib

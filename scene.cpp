@@ -11,6 +11,7 @@
 #include "main.h"
 #include "scene.h"
 
+#include "testscene.h"
 #include "title.h"
 #include "game.h"
 #include "result.h"
@@ -42,6 +43,11 @@ CScene* CScene::Create(MODE mode)
 	{
 	case CScene::MODE_NONE:
 
+		break;
+
+		// ゲーム画面
+	case CScene::MODE_TESTSCENE:
+		pScene = new CTestScene;
 		break;
 
 		// タイトル画面

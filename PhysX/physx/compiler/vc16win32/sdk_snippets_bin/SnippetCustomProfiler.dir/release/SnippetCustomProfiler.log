@@ -1,0 +1,5 @@
+﻿  Building Custom Rule C:/Users/student/Desktop/Project/TKG/PhysX/physx/snippets/compiler/cmake/CMakeLists.txt
+  ClassicMain.cpp
+  SnippetCustomProfiler.cpp
+  SnippetCustomProfilerRender.cpp
+  SnippetCustomProfiler.vcxproj -> C:\Users\student\Desktop\Project\TKG\PhysX\physx\bin\win.x86_32.vc142.mt\release\SnippetCustomProfiler_32.exe

@@ -1,81 +1,81 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\src\BpAABBManager.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\src\BpAABBManager.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\src\BpBroadPhase.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\src\BpBroadPhase.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\src\BpBroadPhaseABP.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseABP.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\src\BpBroadPhaseMBP.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseMBP.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\src\BpBroadPhaseSap.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseSap.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\src\BpBroadPhaseSapAux.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseSapAux.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\src\BpBroadPhaseShared.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseShared.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\src\BpMBPTasks.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\src\BpMBPTasks.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\src\BpSAPTasks.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\src\BpSAPTasks.cpp">
       <Filter>src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\include\BpAABBManager.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\include\BpAABBManager.h">
       <Filter>includes</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\include\BpAABBManagerTasks.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\include\BpAABBManagerTasks.h">
       <Filter>includes</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\include\BpBroadPhase.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\include\BpBroadPhase.h">
       <Filter>includes</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\include\BpBroadPhaseUpdate.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\include\BpBroadPhaseUpdate.h">
       <Filter>includes</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\src\BpBroadPhaseABP.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseABP.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\src\BpBroadPhaseMBP.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseMBP.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\src\BpBroadPhaseMBPCommon.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseMBPCommon.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\src\BpBroadPhaseSap.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseSap.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\src\BpBroadPhaseSapAux.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseSapAux.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\src\BpBroadPhaseShared.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\src\BpBroadPhaseShared.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\src\BpMBPTasks.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\src\BpMBPTasks.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\lowlevelaabb\src\BpSAPTasks.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\lowlevelaabb\src\BpSAPTasks.h">
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\compiler\cmake\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\compiler\cmake\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="includes">
-      <UniqueIdentifier>{C6788BA3-E735-3B50-B4BB-29240EF9C960}</UniqueIdentifier>
+      <UniqueIdentifier>{2C0DD5C3-1854-3855-97E6-79FA8BB15A23}</UniqueIdentifier>
     </Filter>
     <Filter Include="src">
-      <UniqueIdentifier>{B8CF089E-B0AA-3755-B5EA-F613723B2F6C}</UniqueIdentifier>
+      <UniqueIdentifier>{4D3207B3-F6FD-34CF-AFC0-3D1AA8C9D89D}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

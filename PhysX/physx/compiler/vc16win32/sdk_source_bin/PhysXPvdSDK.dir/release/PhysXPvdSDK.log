@@ -1,0 +1,13 @@
+﻿  Building Custom Rule C:/Users/student/Desktop/Project/TKG/PhysX/physx/source/compiler/cmake/CMakeLists.txt
+  PxProfileEventImpl.cpp
+  PxPvd.cpp
+  PxPvdDataStream.cpp
+  PxPvdDefaultFileTransport.cpp
+  PxPvdDefaultSocketTransport.cpp
+  PxPvdImpl.cpp
+  PxPvdMemClient.cpp
+  PxPvdObjectModelMetaData.cpp
+  PxPvdObjectRegistrar.cpp
+  PxPvdProfileZoneClient.cpp
+  PxPvdUserRenderer.cpp
+  PhysXPvdSDK.vcxproj -> C:\Users\student\Desktop\Project\TKG\PhysX\physx\bin\win.x86_32.vc142.mt\release\PhysXPvdSDK_static_32.lib

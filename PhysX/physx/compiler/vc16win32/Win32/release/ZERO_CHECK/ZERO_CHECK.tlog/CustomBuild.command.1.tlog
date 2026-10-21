@@ -1,0 +1,10 @@
+^C:\USERS\STUDENT\DESKTOP\PROJECT\TKG\PHYSX\PHYSX\COMPILER\VC16WIN32\CMAKEFILES\36556BFCE363812D6C785A73B6A0A1F8\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/public -BC:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/PhysXSDK.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

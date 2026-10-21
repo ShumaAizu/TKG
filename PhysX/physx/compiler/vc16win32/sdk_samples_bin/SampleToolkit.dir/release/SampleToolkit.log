@@ -1,0 +1,7 @@
+﻿  Building Custom Rule C:/Users/student/Desktop/Project/TKG/PhysX/physx/samples/compiler/cmake/CMakeLists.txt
+  PxTkBmpLoader.cpp
+  PxTkFPS.cpp
+  PxTkMatrixUtils.cpp
+  PxTkRandom.cpp
+  PxTkStream.cpp
+  SampleToolkit.vcxproj -> C:\Users\student\Desktop\Project\TKG\PhysX\physx\bin\win.x86_32.vc142.mt\release\SamplesToolkit_static_32.lib

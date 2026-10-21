@@ -82,6 +82,9 @@ public:
 
 	CTcpClient* GetTcpClient(void) { return m_pTcpClient; }
 
+	physx::PxPhysics* GetPhysics(void) { return m_pPhysics; }
+	physx::PxScene* GetPxScene(void) { return m_pPxScene; }
+
 private:
 	CManager();
 	~CManager();
@@ -112,6 +115,27 @@ private:
 	CPause* m_pPause;					// ポーズへのポインタ
 
 	CTcpClient* m_pTcpClient;			// クライアントへのポインタ
+
+	// PhysX内で利用するアロケーター
+	physx::PxDefaultAllocator m_defaultAllocator;
+
+	// エラー時用のコールバックでエラー内容が入ってる
+	physx::PxDefaultErrorCallback m_defaultErrorCallback;
+
+	// 上位レベルのSDK(PxPhysicsなど)をインスタンス化する際に必要
+	physx::PxFoundation* m_pFoundation;
+
+	// 実際に物理演算を行う
+	physx::PxPhysics* m_pPhysics;
+
+	// シミュレーションをどう処理するかの設定でマルチスレッドの設定もできる
+	physx::PxDefaultCpuDispatcher* m_pDispatcher;
+
+	// シミュレーションする空間の単位でActorの追加などもここで行う
+	physx::PxScene* m_pPxScene;
+
+	// PVDと通信する際に必要
+	physx::PxPvd* m_pPvd;
 };
 
 #endif

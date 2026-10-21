@@ -25,6 +25,7 @@ public:
 	typedef enum MODE
 	{
 		MODE_NONE = 0,		// なにもない
+		MODE_TESTSCENE,		// テスト
 		MODE_TITLE,			// タイトル
 		MODE_GAME,			// ゲーム
 		MODE_RESULT,		// リザルト

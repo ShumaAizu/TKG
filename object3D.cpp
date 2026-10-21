@@ -509,7 +509,7 @@ D3DXVECTOR3 CObject3D::GetSize(void)
 //=============================================================================
 void CObject3D::SetColor(const D3DXCOLOR col)
 {
-	VERTEX_2D* pVtx;			// 頂点情報へのポインタ
+	VERTEX_3D* pVtx;			// 頂点情報へのポインタ
 
 	// 頂点バッファをロックし,頂点情報へのポインタを取得
 	m_pVtxBuff->Lock(0, 0, (void**)&pVtx, 0);

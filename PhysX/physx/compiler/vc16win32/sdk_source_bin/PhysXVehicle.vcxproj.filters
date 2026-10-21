@@ -1,150 +1,150 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleComponents.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleComponents.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleDrive.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleDrive.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleDrive4W.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleDrive4W.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleDriveNW.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleDriveNW.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleDriveTank.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleDriveTank.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleMetaData.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleMetaData.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleNoDrive.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleNoDrive.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleSDK.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleSDK.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleSerialization.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleSerialization.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleSuspWheelTire4.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleSuspWheelTire4.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleTireFriction.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleTireFriction.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleUpdate.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleUpdate.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleWheels.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleWheels.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\VehicleUtilControl.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\VehicleUtilControl.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\VehicleUtilSetup.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\VehicleUtilSetup.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\VehicleUtilTelemetry.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\VehicleUtilTelemetry.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\physxmetadata\src\PxVehicleAutoGeneratedMetaDataObjects.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\physxmetadata\src\PxVehicleAutoGeneratedMetaDataObjects.cpp">
       <Filter>metadata\src</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\physxmetadata\src\PxVehicleMetaDataObjects.cpp">
+    <ClCompile Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\physxmetadata\src\PxVehicleMetaDataObjects.cpp">
       <Filter>metadata\src</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleDefaults.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleDefaults.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleLinearMath.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleLinearMath.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleSerialization.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleSerialization.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleSuspLimitConstraintShader.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleSuspLimitConstraintShader.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\PxVehicleSuspWheelTire4.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\PxVehicleSuspWheelTire4.h">
       <Filter>src</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\vehicle\PxVehicleComponents.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\vehicle\PxVehicleComponents.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\vehicle\PxVehicleDrive.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\vehicle\PxVehicleDrive.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\vehicle\PxVehicleDrive4W.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\vehicle\PxVehicleDrive4W.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\vehicle\PxVehicleDriveNW.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\vehicle\PxVehicleDriveNW.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\vehicle\PxVehicleDriveTank.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\vehicle\PxVehicleDriveTank.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\vehicle\PxVehicleNoDrive.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\vehicle\PxVehicleNoDrive.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\vehicle\PxVehicleSDK.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\vehicle\PxVehicleSDK.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\vehicle\PxVehicleShaders.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\vehicle\PxVehicleShaders.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\vehicle\PxVehicleTireFriction.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\vehicle\PxVehicleTireFriction.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\vehicle\PxVehicleUpdate.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\vehicle\PxVehicleUpdate.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\vehicle\PxVehicleUtil.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\vehicle\PxVehicleUtil.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\vehicle\PxVehicleUtilControl.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\vehicle\PxVehicleUtilControl.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\vehicle\PxVehicleUtilSetup.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\vehicle\PxVehicleUtilSetup.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\vehicle\PxVehicleUtilTelemetry.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\vehicle\PxVehicleUtilTelemetry.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\include\vehicle\PxVehicleWheels.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\include\vehicle\PxVehicleWheels.h">
       <Filter>include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\physxmetadata\include\PxVehicleAutoGeneratedMetaDataObjectNames.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\physxmetadata\include\PxVehicleAutoGeneratedMetaDataObjectNames.h">
       <Filter>metadata\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\physxmetadata\include\PxVehicleAutoGeneratedMetaDataObjects.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\physxmetadata\include\PxVehicleAutoGeneratedMetaDataObjects.h">
       <Filter>metadata\include</Filter>
     </ClInclude>
-    <ClInclude Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\physxvehicle\src\physxmetadata\include\PxVehicleMetaDataObjects.h">
+    <ClInclude Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\physxvehicle\src\physxmetadata\include\PxVehicleMetaDataObjects.h">
       <Filter>metadata\include</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\student\source\PhysX\PhysX-4.1\PhysX-4.1\physx\source\compiler\cmake\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\student\Desktop\Project\TKG\PhysX\physx\source\compiler\cmake\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="include">
-      <UniqueIdentifier>{B6B12155-EA56-39BA-832E-F8A7380573FD}</UniqueIdentifier>
+      <UniqueIdentifier>{94C049A1-A98B-30B2-AB89-29886A476287}</UniqueIdentifier>
     </Filter>
     <Filter Include="metadata">
-      <UniqueIdentifier>{E1C90D74-44FD-34CA-90AB-66F7557B78A2}</UniqueIdentifier>
+      <UniqueIdentifier>{6BB11C71-DD5A-37AC-947F-B598A03A332B}</UniqueIdentifier>
     </Filter>
     <Filter Include="metadata\include">
-      <UniqueIdentifier>{3680B264-81F7-3739-8D3D-1CC34AD78B40}</UniqueIdentifier>
+      <UniqueIdentifier>{23F06CAC-5F9B-346E-B947-BB408DBB3A5F}</UniqueIdentifier>
     </Filter>
     <Filter Include="metadata\src">
-      <UniqueIdentifier>{90B697C0-59BD-3FC0-89CD-AAD87AF09F36}</UniqueIdentifier>
+      <UniqueIdentifier>{F1335CD5-13F3-3613-9D94-4727659F1EFE}</UniqueIdentifier>
     </Filter>
     <Filter Include="src">
-      <UniqueIdentifier>{B8CF089E-B0AA-3755-B5EA-F613723B2F6C}</UniqueIdentifier>
+      <UniqueIdentifier>{4D3207B3-F6FD-34CF-AFC0-3D1AA8C9D89D}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

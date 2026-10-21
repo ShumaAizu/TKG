@@ -1,6 +1,6 @@
-^C:\USERS\STUDENT\SOURCE\PHYSX\PHYSX-4.1\PHYSX-4.1\PHYSX\COMPILER\VC16WIN32\CMAKEFILES\457E9B313E46C75E8AE052246241A31A\GENERATE.STAMP.RULE
+^C:\USERS\STUDENT\DESKTOP\PROJECT\TKG\PHYSX\PHYSX\COMPILER\VC16WIN32\CMAKEFILES\36556BFCE363812D6C785A73B6A0A1F8\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/public -BC:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/PhysXSDK.sln
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/public -BC:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/PhysXSDK.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

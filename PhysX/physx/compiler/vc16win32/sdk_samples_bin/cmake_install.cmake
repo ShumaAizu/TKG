@@ -1,8 +1,8 @@
-# Install script for directory: C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/samples/compiler/cmake
+# Install script for directory: C:/Users/student/Desktop/Project/TKG/PhysX/physx/samples/compiler/cmake
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/install/vc15win32/PhysX")
+  set(CMAKE_INSTALL_PREFIX "C:/Users/student/Desktop/Project/TKG/PhysX/physx/install/vc15win32/PhysX")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -35,6 +35,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/student/source/PhysX/PhysX-4.1/PhysX-4.1/physx/compiler/vc16win32/sdk_samples_bin/install_local_manifest.txt"
+  file(WRITE "C:/Users/student/Desktop/Project/TKG/PhysX/physx/compiler/vc16win32/sdk_samples_bin/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
