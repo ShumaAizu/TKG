@@ -8,6 +8,8 @@
 #ifndef _PCH_H_
 #define _PCH_H_
 
+#include "PxPhysicsAPI.h"						// PhysX
+
 #ifdef _DEBUG
 #define _CRTDBG_MAP_ALLOC        // メモリリーク検知範囲拡大マクロ
 #endif
@@ -29,8 +31,6 @@
 
 #include <stdlib.h>								// デバッグ用newマクロに使用
 #include <crtdbg.h>								// デバッグ用newマクロに使用
-
-#include "PxPhysicsAPI.h"						// PhysX
 
 //*****************************************************************************
 // ライブラリのリンク

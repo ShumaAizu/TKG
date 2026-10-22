@@ -18,9 +18,9 @@ SCRIPT		# Ç±ÇÃçsÇÕè¡Ç≥Ç»Ç¢Ç≈ÇÀÅI
 FIELDSET
 	TEXTURE_FILENAME = data//TEXTURE//field001.jpg
 	POS = 0.0 0.0 0.0
-	ROT = 0.0 0.0 0.0
-	WIDTH = 250.0
-	DEPTH = 250.0
+	ROT = 0.75 0.0 0.0
+	WIDTH = 2500.0
+	DEPTH = 2500.0
 END_FIELDSET
 
 #FIELDSET
@@ -60,34 +60,34 @@ END_FIELDSET
 #------------------------------------------------------------------------------
 WALLSET
 	TEXTURE_FILENAME = data//TEXTURE//wall000.jpg
-	POS = 0.0 250.0 250.0
+	POS = 0.0 250.0 1250.0
 	ROT = 0.0 0.0 0.0
-	WIDTH = 375.0
-	HEIGHT = 375.0
+	WIDTH = 1250.0
+	HEIGHT = 2500.0
 END_WALLSET
 
 WALLSET
 	TEXTURE_FILENAME = data//TEXTURE//wall000.jpg
-	POS = 250.0 250.0 0.0
+	POS = 1250.0 250.0 0.0
 	ROT = 0.0 1.57 0.0
-	WIDTH = 375.0
-	HEIGHT = 375.0
+	WIDTH = 1250.0
+	HEIGHT = 2500.0
 END_WALLSET
 
 WALLSET
 	TEXTURE_FILENAME = data//TEXTURE//wall000.jpg
-	POS = -250.0 250.0 0.0
+	POS = -1250.0 250.0 0.0
 	ROT = 0.0 -1.57 0.0
-	WIDTH = 375.0
-	HEIGHT = 375.0
+	WIDTH = 1250.0
+	HEIGHT = 2500.0
 END_WALLSET
 
 WALLSET
 	TEXTURE_FILENAME = data//TEXTURE//wall000.jpg
-	POS = 0.0 250.0 -250.0
+	POS = 0.0 250.0 -1250.0
 	ROT = 0.0 3.14 0.0
-	WIDTH = 375.0
-	HEIGHT = 375.0
+	WIDTH = 1250.0
+	HEIGHT = 2500.0
 END_WALLSET
 
 #------------------------------------------------------------------------------

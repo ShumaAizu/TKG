@@ -272,11 +272,6 @@ void CBall::Update(void)
 	m_posOld = m_pos;
 	m_vecAxisOld = m_vecAxis;
 
-	// デバッグ機能
-#if _DEBUG
-	Debug();
-#endif
-
 	if (pInputKeyboard->GetTrigger(DIK_TAB) == true)
 	{
 		D3DXVECTOR3 impulse = D3DXVECTOR3(0.0f, 0.0f, 0.0f);

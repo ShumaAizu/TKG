@@ -18,6 +18,13 @@
 #endif // new
 
 //*****************************************************************************
+// ImGui関連インクルードヘッダー
+//*****************************************************************************
+#include "imgui.h"					// 本体
+#include "imgui_impl_dx9.h"			// DirectX9
+#include "imgui_impl_win32.h"		// Windows32
+
+//*****************************************************************************
 // マクロ定義
 //*****************************************************************************
 #define CLASS_NAME			"WindowClass"					// ウインドウクラスの名前
@@ -27,6 +34,7 @@
 // プロトタイプ宣言
 //*****************************************************************************
 LRESULT CALLBACK WindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
+extern IMGUI_IMPL_API LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
 
 //*****************************************************************************
 // グローバル変数
@@ -176,6 +184,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hInstancePrev, LPSTR lpCmdLine
 //===============================================================================
 LRESULT CALLBACK WindowProc(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
+	// ImGuiのメッセージ処理
+	if (ImGui_ImplWin32_WndProcHandler(hWnd, uMsg, wParam, lParam))
+	{
+		return true;
+	}
+
 	// 入力デバイス取得
 	CManager* pManager = CManager::GetInstance();
 	CInputMouse* pInputMouse = pManager->GetInputMouse();

@@ -36,7 +36,8 @@ public:
 	float GetHeight(const D3DXVECTOR3 pos, const D3DXVECTOR3 posOld);
 
 private:
-
+	physx::PxRigidDynamic* m_pRigid_Dynamic;	// “®“I„‘Ì
+	physx::PxShape* m_pBox_Shape;				// Œ`ó (lŠp)
 };
 
 #endif	// !_FIELD_H_

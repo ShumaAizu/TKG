@@ -47,7 +47,9 @@ CWall* CWall::Create(const D3DXVECTOR3 pos,
 //=============================================================================
 CWall::CWall(int nPriority) : CObject3D(nPriority)
 {
-
+	// メンバ変数クリア
+	m_pRigid_Dynamic = nullptr;
+	m_pBox_Shape = nullptr;
 }
 
 //=============================================================================
@@ -75,6 +77,41 @@ HRESULT CWall::Init(const D3DXVECTOR3 pos,
 	const float fHeight,
 	const char* pTexFile)
 {
+	// マネージャーの取得
+	CManager* pManager = CManager::GetInstance();
+
+	// 物理エンジン取得
+	physx::PxPhysics* pPhysics = pManager->GetPhysics();
+	physx::PxScene* pPxScene = pManager->GetPxScene();
+
+	m_pRigid_Dynamic = pPhysics->createRigidDynamic(physx::PxTransform(physx::PxIdentity));
+	m_pBox_Shape = pPhysics->createShape(physx::PxBoxGeometry(fWidth, fHeight, 25.0f),
+		*pPhysics->createMaterial(0.5f, 0.5f, 0.5f));
+
+	physx::PxTransform Localpose = physx::PxTransform(physx::PxIdentity);
+	Localpose.p.z = 25.0f;
+
+	// 形状を紐づけ
+	m_pBox_Shape->setLocalPose(Localpose);
+	m_pRigid_Dynamic->attachShape(*m_pBox_Shape);
+
+	physx::PxVec3 Position = physx::PxVec3(pos.x, pos.y, pos.z);
+
+	D3DXQUATERNION quat;
+	D3DXQuaternionRotationYawPitchRoll(&quat, rot.y, rot.x, rot.z);
+
+	physx::PxQuat Quat = physx::PxQuat(quat.x, quat.y, quat.z, quat.w);
+	physx::PxTransform pose = physx::PxTransform(Position, Quat);
+
+	// キネマティック化
+	m_pRigid_Dynamic->setRigidBodyFlag(physx::PxRigidBodyFlag::eKINEMATIC, true);
+	m_pRigid_Dynamic->setKinematicTarget(pose);
+
+	m_pRigid_Dynamic->setGlobalPose(pose);
+
+	// 剛体を空間に追加
+	pPxScene->addActor(*m_pRigid_Dynamic);
+
 	// 各種値設定
 	CObject3D::Init(pos, rot, fWidth, fHeight, 0.0f, pTexFile);
 

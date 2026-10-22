@@ -102,7 +102,7 @@ CManager::~CManager()
 //=============================================================================
 HRESULT CManager::Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow)
 {
-#ifdef _DEBUG
+#ifndef _DEBUG
 	// マウスカーソルを非表示
 	ShowCursor(false);
 #endif
@@ -361,13 +361,13 @@ HRESULT CManager::Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow)
 	}
 
 	// 初期化処理
-	if (FAILED(m_pFade->Init(CScene::MODE_TITLE, COLOR_WHITE)))
+	if (FAILED(m_pFade->Init(CScene::MODE_TESTSCENE, COLOR_WHITE)))
 	{// 失敗した場合
 		return -1;
 	}
 
-	D3DXVECTOR3 nor = D3DXVECTOR3(0.5f, 1.0f, 0.0f);
-	D3DXVec3Normalize(&nor, &nor);
+	//D3DXVECTOR3 nor = D3DXVECTOR3(0.5f, 1.0f, 0.0f);
+	//D3DXVec3Normalize(&nor, &nor);
 
 	//// 平面を追加
 	//m_pPxScene->addActor(*physx::PxCreatePlane(
@@ -402,60 +402,60 @@ HRESULT CManager::Init(HINSTANCE hInstance, HWND hWnd, BOOL bWindow)
 	//	*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f))
 	//);
 
-	nor = D3DXVECTOR3(1.0f, 0.0f, 0.0f);
-	D3DXVec3Normalize(&nor, &nor);
+	//nor = D3DXVECTOR3(1.0f, 0.0f, 0.0f);
+	//D3DXVec3Normalize(&nor, &nor);
 
-	// 平面を追加
-	m_pPxScene->addActor(*physx::PxCreatePlane(
-		*m_pPhysics, physx::PxPlane(nor.x, nor.y, nor.z, 250),
-		*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f))
-	);
+	//// 平面を追加
+	//m_pPxScene->addActor(*physx::PxCreatePlane(
+	//	*m_pPhysics, physx::PxPlane(nor.x, nor.y, nor.z, 250),
+	//	*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f))
+	//);
 
-	nor = D3DXVECTOR3(-1.0f, 0.0f, 0.0f);
-	D3DXVec3Normalize(&nor, &nor);
+	//nor = D3DXVECTOR3(-1.0f, 0.0f, 0.0f);
+	//D3DXVec3Normalize(&nor, &nor);
 
-	// 平面を追加
-	m_pPxScene->addActor(*physx::PxCreatePlane(
-		*m_pPhysics, physx::PxPlane(nor.x, nor.y, nor.z, 250),
-		*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f))
-	);
+	//// 平面を追加
+	//m_pPxScene->addActor(*physx::PxCreatePlane(
+	//	*m_pPhysics, physx::PxPlane(nor.x, nor.y, nor.z, 250),
+	//	*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f))
+	//);
 
-	nor = D3DXVECTOR3(0.0f, 0.0f, 1.0f);
-	D3DXVec3Normalize(&nor, &nor);
+	//nor = D3DXVECTOR3(0.0f, 0.0f, 1.0f);
+	//D3DXVec3Normalize(&nor, &nor);
 
-	// 平面を追加
-	m_pPxScene->addActor(*physx::PxCreatePlane(
-		*m_pPhysics, physx::PxPlane(nor.x, nor.y, nor.z, 250),
-		*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f))
-	);
+	//// 平面を追加
+	//m_pPxScene->addActor(*physx::PxCreatePlane(
+	//	*m_pPhysics, physx::PxPlane(nor.x, nor.y, nor.z, 250),
+	//	*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f))
+	//);
 
-	nor = D3DXVECTOR3(0.0f, 0.0f, -1.0f);
-	D3DXVec3Normalize(&nor, &nor);
+	//nor = D3DXVECTOR3(0.0f, 0.0f, -1.0f);
+	//D3DXVec3Normalize(&nor, &nor);
 
-	// 平面を追加
-	m_pPxScene->addActor(*physx::PxCreatePlane(
-		*m_pPhysics, physx::PxPlane(nor.x, nor.y, nor.z, 250),
-		*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f))
-	);
+	//// 平面を追加
+	//m_pPxScene->addActor(*physx::PxCreatePlane(
+	//	*m_pPhysics, physx::PxPlane(nor.x, nor.y, nor.z, 250),
+	//	*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f))
+	//);
 
-	// 絶対に動くことのない(静的)剛体を作成
-	physx::PxRigidDynamic* rigid_static
-		= m_pPhysics->createRigidDynamic(physx::PxTransform(physx::PxIdentity));
-	// 形状(Box)を作成
-	physx::PxShape* box_shape
-		= m_pPhysics->createShape(
-			// Boxの大きさ
-			physx::PxBoxGeometry(250.0f, 10.0f, 250.0f),
-			// 摩擦係数と反発係数の設定
-			*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f)
-		);
-	// 形状のローカル座標を設定
-	box_shape->setLocalPose(physx::PxTransform(physx::PxIdentity));
-	// 形状を紐づけ
-	rigid_static->attachShape(*box_shape);
-	rigid_static->setRigidBodyFlag(physx::PxRigidBodyFlag::eKINEMATIC, true);
-	// 剛体を空間に追加
-	m_pPxScene->addActor(*rigid_static);
+	//// 絶対に動くことのない(静的)剛体を作成
+	//physx::PxRigidDynamic* rigid_static
+	//	= m_pPhysics->createRigidDynamic(physx::PxTransform(physx::PxIdentity));
+	//// 形状(Box)を作成
+	//physx::PxShape* box_shape
+	//	= m_pPhysics->createShape(
+	//		// Boxの大きさ
+	//		physx::PxBoxGeometry(250.0f, 10.0f, 250.0f),
+	//		// 摩擦係数と反発係数の設定
+	//		*m_pPhysics->createMaterial(0.5f, 0.5f, 0.5f)
+	//	);
+	//// 形状のローカル座標を設定
+	//box_shape->setLocalPose(physx::PxTransform(physx::PxIdentity));
+	//// 形状を紐づけ
+	//rigid_static->attachShape(*box_shape);
+	//rigid_static->setRigidBodyFlag(physx::PxRigidBodyFlag::eKINEMATIC, true);
+	//// 剛体を空間に追加
+	//m_pPxScene->addActor(*rigid_static);
 
 	//// 動かすことのできる(動的)剛体を作成
 	//physx::PxRigidDynamic* rigid_dynamic
@@ -640,6 +640,12 @@ void CManager::Uninit(void)
 //=============================================================================
 void CManager::Update(void)
 {
+	// シミュレーション速度を指定する
+	m_pPxScene->simulate(1.0f / 10.0f);
+
+	// PhysXの処理が終わるまで待つ
+	m_pPxScene->fetchResults(true);
+
 	// キーボードの更新処理
 	if (m_pInputKeyboard != nullptr)
 	{
@@ -691,11 +697,6 @@ void CManager::Update(void)
 	{
 		CModelParticle::Create(D3DXVECTOR3(0.0f, 150.0f, 0.0f), CModelParticle::TYPE::TYPE_EARTH);
 	}
-
-	// シミュレーション速度を指定する
-	m_pPxScene->simulate(1.0f / 10.0f);
-	// PhysXの処理が終わるまで待つ
-	m_pPxScene->fetchResults(true);
 
 	// ランキング機能の仮置き
 	RankingTest();

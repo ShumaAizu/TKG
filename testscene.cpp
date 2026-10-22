@@ -86,16 +86,16 @@ HRESULT CTestScene::Init(void)
 
 	//CRotationGimmick::Create(D3DXVECTOR3(0.0f, -50.0f, 0.0f), D3DXVECTOR3(0.0f, 0.0f, D3DX_PI * 0.5f), 75.0f, 250.0f, 75.0f, "data//MODEL//TestBox000.x");
 
-	m_vpRotGimmick.push_back(CRotationGimmick::Create(D3DXVECTOR3(0.0f, 500.0f, 0.0f), D3DXVECTOR3(0.0f, 0.0f, 0.0f), 150.0f, 12.5f, 50.0f, "data//MODEL//TestBox001.x"));
+	m_vpRotGimmick.push_back(CRotationGimmick::Create(D3DXVECTOR3(0.0f, 500.0f, -550.0f), D3DXVECTOR3(-0.75f, 0.0f, 0.0f), 150.0f, 12.5f, 50.0f, "data//MODEL//TestBox001.x"));
 
-	m_vpRotGimmick.push_back(CRotationGimmick::Create(D3DXVECTOR3(175.0f, 300.0f, 0.0f), D3DXVECTOR3(0.0f, 0.0f, 0.0f), 150.0f, 12.5f, 50.0f, "data//MODEL//TestBox001.x"));
+	m_vpRotGimmick.push_back(CRotationGimmick::Create(D3DXVECTOR3(175.0f, 300.0f, -250.0f), D3DXVECTOR3(-0.75f, 0.0f, 0.0f), 150.0f, 12.5f, 50.0f, "data//MODEL//TestBox001.x"));
 
-	m_vpRotGimmick.push_back(CRotationGimmick::Create(D3DXVECTOR3(-175.0f, 100.0f, 0.0f), D3DXVECTOR3(0.0f, 0.0f, 0.0f), 150.0f, 12.5f, 50.0f, "data//MODEL//TestBox001.x"));
+	m_vpRotGimmick.push_back(CRotationGimmick::Create(D3DXVECTOR3(-175.0f, 100.0f, -50.0f), D3DXVECTOR3(-0.75f, 0.0f, 0.0f), 150.0f, 12.5f, 50.0f, "data//MODEL//TestBox001.x"));
 
 
 	//CRotationGimmick::Create(D3DXVECTOR3(0.0f, -50.0f, -0.0f), D3DXVECTOR3(0.0f, D3DX_PI * 0.5f, 0.0f), 75.0f, 250.0f, 75.0f, "data//MODEL//TestBox000.x");
 
-	CBall::Create(D3DXVECTOR3(0.0f, 750.0f, 0.0f), 10.0f, 10.0f, 10.0f);
+	CBall::Create(D3DXVECTOR3(0.0f, 1500.0f, -1250.0f), 10.0f, 10.0f, 10.0f);
 
 	m_pObjectLoader->Load("data//SCRIPTS//Test000.txt");
 
@@ -181,7 +181,7 @@ void CTestScene::Update(void)
 
 	if (pInputKeyboard->GetTrigger(DIK_BACK) == true)
 	{// バックスペースでリセット
-		pManager->SetMode(MODE_GAME);
+		pManager->SetMode(MODE_TESTSCENE);
 	}
 
 	CDebugProc::Print("TEST\n");

@@ -33,7 +33,8 @@ public:
 	bool Collision(D3DXVECTOR3* pPos, D3DXVECTOR3* pPosOld, float fRadius, bool bRetrun, bool bIn);
 
 private:
-
+	physx::PxRigidDynamic* m_pRigid_Dynamic;	// “®“I„‘Ì
+	physx::PxShape* m_pBox_Shape;				// Œ`ó (lŠp)
 };
 
 #endif	// !_WALL_H_

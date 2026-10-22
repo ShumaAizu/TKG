@@ -49,6 +49,15 @@
     <Filter Include="ヘッダー ファイル\04_Scene">
       <UniqueIdentifier>{7f7d1efc-ffef-48d9-a40c-69ec1951f79e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ImGui">
+      <UniqueIdentifier>{5a243d1d-20d7-4c8e-acfb-1196fa33cd94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui\ソースファイル">
+      <UniqueIdentifier>{d16f2e56-954d-4f3a-aaa1-04e9458556df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ImGui\ヘッダーファイル">
+      <UniqueIdentifier>{d6cbcfdc-7fb1-4e67-bbcb-659d72b8d622}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="camera.cpp">
@@ -170,6 +179,24 @@
     </ClCompile>
     <ClCompile Include="testscene.cpp">
       <Filter>ソース ファイル\04_Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui.cpp">
+      <Filter>ImGui\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_draw.cpp">
+      <Filter>ImGui\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_dx9.cpp">
+      <Filter>ImGui\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_impl_win32.cpp">
+      <Filter>ImGui\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_tables.cpp">
+      <Filter>ImGui\ソースファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui_widgets.cpp">
+      <Filter>ImGui\ソースファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -295,6 +322,30 @@
     </ClInclude>
     <ClInclude Include="testscene.h">
       <Filter>ヘッダー ファイル\04_Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_truetype.h">
+      <Filter>ImGui\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="imconfig.h">
+      <Filter>ImGui\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui.h">
+      <Filter>ImGui\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_dx9.h">
+      <Filter>ImGui\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_impl_win32.h">
+      <Filter>ImGui\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui_internal.h">
+      <Filter>ImGui\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_rectpack.h">
+      <Filter>ImGui\ヘッダーファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="imstb_textedit.h">
+      <Filter>ImGui\ヘッダーファイル</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
